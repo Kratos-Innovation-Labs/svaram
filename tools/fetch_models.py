@@ -9,7 +9,8 @@
 Reads deploy/models.yaml. A file whose checksum differs is deleted and the run stops: Svaram never
 runs a model it has not checked. If Hugging Face asks for a login (some models need their terms
 accepted first), the token is asked for once, hidden, used for these downloads only, and never
-written anywhere. Standard library plus PyYAML.
+written anywhere. Where nobody can type it (a container), it is read from the HF_TOKEN environment
+variable instead, and is still only sent to huggingface.co. Standard library plus PyYAML.
 """
 from __future__ import annotations
 
@@ -31,7 +32,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 import yaml  # noqa: E402
 
 UA = {"User-Agent": "svaram-installer"}
-_token: str | None = None
+_token: str | None = os.environ.get("HF_TOKEN", "").strip() or None
 
 
 class FetchError(RuntimeError):
@@ -255,6 +256,7 @@ def main() -> None:
     ap.add_argument("--check", action="store_true", help="only check files already downloaded")
     ap.add_argument("--indictts-langs", default="gu,or")
     ap.add_argument("--manifest-sha-out", help="write the indictts manifest SHA-256 to this file")
+    ap.add_argument("--models-root", help="put the models under this folder instead of /opt/svaram")
     ap.add_argument("--itts-python", default="/opt/svaram/voice-itts/venv/bin/python",
                     help="Python with torch, used to slim the Indic-TTS checkpoints")
     a = ap.parse_args()
@@ -264,6 +266,8 @@ def main() -> None:
         for s in a.services:
             print(f"{s}:")
             m = models[s]
+            if a.models_root:
+                m["dir"] = m["dir"].replace("/opt/svaram", a.models_root.rstrip("/"), 1)
             os.makedirs(m["dir"], exist_ok=True)
             if s == "rasa":
                 fetch_rasa(m, a.check)

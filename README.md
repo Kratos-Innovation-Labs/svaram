@@ -6,6 +6,8 @@ type in English and have it translated and spoken in their language.
 
 It runs today at **[svaram.live](https://svaram.live)** in twelve Indian languages: Telugu, Hindi,
 Tamil, Kannada, Marathi, Bengali, Punjabi, Malayalam, Assamese, Gujarati, Odia and Dogri.
+Try the engine on Hugging Face: [kratos-innovation-labs/svaram](https://huggingface.co/spaces/kratos-innovation-labs/svaram)
+(demo) and [svaram-phrases](https://huggingface.co/datasets/kratos-innovation-labs/svaram-phrases) (dataset).
 
 Communication should never be a privilege. Svaram is released as a public good: a hospital, an NGO,
 a university or a developer anywhere can run it, add their own languages and offer it to the people
@@ -47,7 +49,8 @@ See [docs/architecture.md](docs/architecture.md).
 | `translate/` | svaram-translate (IndicTrans2) |
 | `voices/` | The three voice services: `rasa`, `kokoro`, `indictts` |
 | `web/` | Page templates, styles, script, fonts and `site.yaml` |
-| `tools/` | `build_site.py`, `make_phrases.py`, `check_pack.py` |
+| `tools/` | `build_site.py`, `make_phrases.py`, `check_pack.py`, `fetch_models.py`, `selftest.py`, `build_space.py`, `export_dataset.py` |
+| `space/` | The Hugging Face demo: Gradio page, start script, Dockerfile |
 | `deploy/` | Installer, sample systemd units, nginx site and settings |
 | `docs/` | Architecture, API, deploying, adding a language, privacy |
 

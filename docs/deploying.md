@@ -60,3 +60,14 @@ whether search engines may list the site. Rebuild the pages after any change to 
 
 Pull the new version into `/opt/svaram/src`, run `python3 tools/check_pack.py`, restart the
 services one at a time (`systemctl restart svaram-api` and so on), and rebuild the pages.
+
+## Hugging Face demo
+
+`space/` holds the demo Space: a Gradio page (`space/app.py`) on top of the same five services,
+started by `space/start.sh` in a Docker container (`space/Dockerfile`). Build the Space folder from a
+tagged release with `python3 tools/build_space.py --ref v0.1.0 --out /tmp/svaram-space` and push that
+folder to the Space. The Space needs one secret, `HF_TOKEN`: a read-only token of an account that has
+accepted the IndicTrans2 terms, used only to download that model at start-up.
+
+`python3 tools/export_dataset.py --out /tmp/svaram-phrases` rebuilds the phrases dataset from the
+language packs.
