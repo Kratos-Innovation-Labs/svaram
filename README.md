@@ -6,7 +6,7 @@ type in English and have it translated and spoken in their language.
 
 It runs today at **[svaram.live](https://svaram.live)** in twelve Indian languages: Telugu, Hindi,
 Tamil, Kannada, Marathi, Bengali, Punjabi, Malayalam, Assamese, Gujarati, Odia and Dogri.
-Try the engine on Hugging Face: [kratos-innovation-labs/svaram](https://huggingface.co/spaces/kratos-innovation-labs/svaram)
+Try the engine on Hugging Face: [paddolker/svaram](https://huggingface.co/spaces/paddolker/svaram)
 (demo) and [svaram-phrases](https://huggingface.co/datasets/kratos-innovation-labs/svaram-phrases) (dataset).
 
 Communication should never be a privilege. Svaram is released as a public good: a hospital, an NGO,
