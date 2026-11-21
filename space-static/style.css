@@ -1,0 +1,30 @@
+:root { --fg: #1f2328; --muted: #59636e; --line: #d0d7de; --soft: #f6f8fa; --accent: #ea580c; --link: #0969da; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #e6edf3; --muted: #9198a1; --line: #3d444d; --soft: #151b23; --accent: #f97316; --link: #4493f8; }
+  body { background: #0d1117; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", "Noto Sans", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font-size: 26px; line-height: 1.25; margin: 0 0 8px; font-weight: 600; }
+a { color: var(--link); }
+.lead { margin: 0 0 20px; color: var(--muted); }
+label { display: block; font-size: 14px; color: var(--muted); margin-bottom: 4px; }
+textarea, select { width: 100%; font: inherit; color: inherit; background: transparent; border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+select { height: 46px; }
+.count { text-align: right; font-size: 12px; color: var(--muted); margin: 2px 0 12px; }
+.row { display: flex; gap: 12px; align-items: flex-end; margin-bottom: 16px; }
+.grow { flex: 1; min-width: 0; }
+button { font: inherit; cursor: pointer; border-radius: 8px; border: 1px solid var(--line); background: var(--soft); color: inherit; min-height: 46px; padding: 0 16px; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; min-width: 130px; }
+button:disabled { opacity: .6; cursor: progress; }
+.shown { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; min-height: 76px; background: var(--soft); }
+.shown-text { font-size: 22px; line-height: 1.5; }
+.small { font-size: 13px; color: var(--muted); }
+.status { min-height: 1.6em; font-size: 14px; color: var(--muted); margin: 8px 0 16px; }
+.status.err { color: #cf222e; }
+.phrases { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 24px; }
+.phrases button { min-height: 52px; font-size: 15px; }
+footer { border-top: 1px solid var(--line); padding-top: 12px; font-size: 13px; color: var(--muted); }
+footer p { margin: 0 0 8px; }
+@media (max-width: 480px) { .phrases { grid-template-columns: repeat(2, minmax(0, 1fr)); } .row { flex-direction: column; align-items: stretch; } }

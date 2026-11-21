@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Svaram: type in English, be heard in 12 Indian languages</title>
+<meta name="description" content="Free type-to-speech for people who cannot speak. Type in English and hear it in 12 Indian languages.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1><span lang="sa">स्वरम्</span> Svaram: type in English, be heard in 12 Indian languages</h1>
+  <p class="lead">Free type-to-speech for people who cannot speak. This is a demo of the
+    <a href="https://github.com/Kratos-Innovation-Labs/svaram" target="_blank" rel="noopener">open-source engine</a>;
+    for everyday use go to <a href="https://svaram.live" target="_blank" rel="noopener"><b>svaram.live</b></a>.</p>
+
+  <label for="text">Type in English</label>
+  <textarea id="text" rows="3" maxlength="300" placeholder="I need some water, please." autocomplete="off" spellcheck="true"></textarea>
+  <div class="count"><span id="count">0</span> / 300</div>
+
+  <div class="row">
+    <div class="grow">
+      <label for="lang">Speak in</label>
+      <select id="lang"></select>
+    </div>
+    <button id="go" class="primary" type="button">Speak</button>
+  </div>
+
+  <div class="shown" aria-live="polite">
+    <div class="small" id="shown-label">In the chosen language</div>
+    <div id="shown" class="shown-text"></div>
+  </div>
+  <p id="status" class="status" role="status" aria-live="polite"></p>
+  <audio id="player" preload="none"></audio>
+
+  <p class="small"><b>Quick phrases</b> · tap to hear</p>
+  <div id="phrases" class="phrases"></div>
+
+  <footer>
+    <p>Your text goes from your browser to svaram.live, which speaks it and keeps nothing. Nothing is saved or logged.
+      For everyday use go to <a href="https://svaram.live" target="_blank" rel="noopener">svaram.live</a>.</p>
+    <p>Code on <a href="https://github.com/Kratos-Innovation-Labs/svaram" target="_blank" rel="noopener">GitHub</a> (Apache-2.0) ·
+      <a href="https://huggingface.co/datasets/kratos-innovation-labs/svaram-phrases" target="_blank" rel="noopener">Phrases dataset</a> (CC-BY-4.0)</p>
+    <p>Translation: AI4Bharat IndicTrans2 (MIT) · Voices: AI4Bharat vits_rasa_13 (CC-BY-4.0), Kokoro-82M (Apache-2.0),
+      AI4Bharat Indic-TTS (see <a href="https://github.com/Kratos-Innovation-Labs/svaram/blob/main/CREDITS.md" target="_blank" rel="noopener">CREDITS.md</a>) ·
+      Built by Kratos Innovation Labs</p>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

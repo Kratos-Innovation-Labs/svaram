@@ -63,11 +63,17 @@ services one at a time (`systemctl restart svaram-api` and so on), and rebuild t
 
 ## Hugging Face demo
 
-`space/` holds the demo Space: a Gradio page (`space/app.py`) on top of the same five services,
-started by `space/start.sh` in a Docker container (`space/Dockerfile`). Build the Space folder from a
-tagged release with `python3 tools/build_space.py --ref v0.1.0 --out /tmp/svaram-space` and push that
-folder to the Space. The Space needs one secret, `HF_TOKEN`: a read-only token of an account that has
-accepted the IndicTrans2 terms, used only to download that model at start-up.
+The live demo is a free static Space, kratos-innovation-labs/svaram, built from `space-static/` by
+`python3 tools/build_static_space.py --out /tmp/svaram-static`. Its page calls svaram.live's public
+API; `deploy/nginx.sample.conf` allows that one extra origin and answers its CORS preflight
+(`$svaram_cors` maps). If you run your own copy of the page, add your page's origin to those maps.
+
+`space/` holds a self-contained Docker version of the demo: the same five services in one
+container, with a Gradio page (`space/app.py`, `space/start.sh`, `space/Dockerfile`). Hugging Face
+hosts Docker Spaces on its free CPU only for PRO accounts. Build it with
+`python3 tools/build_space.py --ref <tag> --out /tmp/svaram-space`. It needs one secret, `HF_TOKEN`:
+a read-only token of an account that has accepted the IndicTrans2 terms, used only to download
+that model at start-up.
 
 `python3 tools/export_dataset.py --out /tmp/svaram-phrases` rebuilds the phrases dataset from the
 language packs.

@@ -34,3 +34,25 @@ def test_space_build_has_what_start_needs():
             assert os.path.isfile(os.path.join(out, need)), need
         assert "sdk: docker" in open(os.path.join(out, "README.md"), encoding="utf-8").read()
         assert not os.path.exists(os.path.join(out, "web")) and not os.path.exists(os.path.join(out, "tests"))
+
+
+def test_static_space_build():
+    import json
+    with tempfile.TemporaryDirectory() as out:
+        subprocess.run([sys.executable, os.path.join(ROOT, "tools", "build_static_space.py"), "--out", out],
+                       check=True, capture_output=True)
+        data = json.load(open(os.path.join(out, "phrases.json"), encoding="utf-8"))
+        assert len(data["languages"]) == 12
+        assert all(len(L["phrases"]) == 6 for L in data["languages"])
+        assert "sdk: static" in open(os.path.join(out, "README.md"), encoding="utf-8").read()
+        js = open(os.path.join(out, "app.js"), encoding="utf-8").read()
+        assert 'var API = "https://svaram.live";' in js
+        assert "localStorage" not in js and "document.cookie" not in js
+
+
+def test_nginx_allows_exactly_the_static_space():
+    conf = open(os.path.join(ROOT, "deploy", "nginx.sample.conf"), encoding="utf-8").read()
+    assert conf.count("kratos-innovation-labs-svaram\\.static\\.hf\\.space$") == 2
+    assert conf.count("limit_except POST OPTIONS { deny all; }") == 2
+    proxy = open(os.path.join(ROOT, "deploy", "nginx.api-proxy.conf"), encoding="utf-8").read()
+    assert "if ($request_method = OPTIONS) { return 204; }" in proxy
