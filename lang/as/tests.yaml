@@ -1,0 +1,90 @@
+- text: মই কথা কব নোৱাৰো
+  spoken: মই কথা কব নোৱাৰো
+  ok: true
+- text: মোক সহায় লাগে
+  spoken: মোক সহায় লাগে
+  ok: true
+- text: অনুগ্ৰহ কৰি ডাক্তৰক মাতক
+  spoken: অনুগ্ৰহ কৰি ডাক্তৰক মাতক
+  ok: true
+- text: হয়
+  spoken: হয়
+  ok: true
+- text: নহয়
+  spoken: নহয়
+  ok: true
+- text: ধন্যবাদ
+  spoken: ধন্যবাদ
+  ok: true
+- text: নমস্কাৰ
+  spoken: নমস্কাৰ
+  ok: true
+- text: অনুগ্ৰহ কৰি অপেক্ষা কৰক
+  spoken: অনুগ্ৰহ কৰি অপেক্ষা কৰক
+  ok: true
+- text: দাম কিমান?
+  spoken: দাম কিমান?
+  ok: true
+- text: শৌচালয় ক'ত আছে?
+  spoken: শৌচালয় কোত আছে?
+  ok: true
+- text: মোক পানী লাগে
+  spoken: মোক পানী লাগে
+  ok: true
+- text: অনুগ্ৰহ কৰি লিখি দেখুৱাওক
+  spoken: অনুগ্ৰহ কৰি লিখি দেখুৱাওক
+  ok: true
+- text: '2'
+  spoken: দুই
+  ok: true
+- text: '15'
+  spoken: পোন্ধৰ
+  ok: true
+- text: '250'
+  spoken: দুশ পঞ্চাশ
+  ok: true
+- text: 1,45,622
+  spoken: এক লাখ পঁয়তাল্লিশ হাজাৰ ছয়শ বাইছ
+  ok: true
+- text: '2.5'
+  spoken: দুই দশমিক পাঁচ
+  ok: true
+- text: '10:30'
+  spoken: দহ বাজি ত্ৰিশ মিনিট
+  ok: true
+- text: 9:05 PM
+  spoken: ৰাতি ন বাজি পাঁচ মিনিট
+  ok: true
+- text: ₹250
+  spoken: দুশ পঞ্চাশ টকা
+  ok: true
+- text: ₹99.50
+  spoken: নিৰানব্বৈ টকা পঞ্চাশ পইচা
+  ok: true
+- text: 98480 12345
+  spoken: ন আঠ চাৰি আঠ শূন্য, এক দুই তিনি চাৰি পাঁচ
+  ok: true
+- text: 15/08/2026
+  spoken: আগষ্ট পোন্ধৰ দুই হাজাৰ ছাব্বিছ
+  ok: true
+- text: 50%
+  spoken: পঞ্চাশ শতাংশ
+  ok: true
+- text: 500 mg
+  spoken: পাঁচশ মিলিগ্ৰাম
+  ok: true
+- text: BP
+  spoken: বি পি
+  ok: true
+- text: ATM
+  spoken: এ টি এম
+  ok: true
+- text: doctor
+  spoken: ডাক্তৰ
+  ok: true
+- text: Ramesh
+  spoken: ''
+  ok: false
+- text: '108'
+  spoken: এশ আঠ
+  ok: true

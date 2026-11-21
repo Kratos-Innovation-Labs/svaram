@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{robots_meta}}<title>About and privacy · Svaram</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<link rel="stylesheet" href="/app.css?v={{asset_version}}">
+</head>
+<body>
+<div class="page">
+  <header class="bar">
+    <a href="/" class="logo-link">
+      <picture>
+        <source srcset="/brand/logo-white-600.png" media="(prefers-color-scheme: dark)">
+        <img src="/brand/logo-dark-600.png" alt="Svaram home" width="62" height="40" class="logo">
+      </picture>
+    </a>
+    <span class="badge">Beta · <span lang="te">తెలుగు</span></span>
+  </header>
+
+  <main class="doc">
+    <h1>About Svaram</h1>
+    <p>Svaram (<span lang="hi">स्वरम्</span>) is a free web app for people who cannot speak. Type a sentence, tap the speaker button, and Svaram says it aloud, so the person in front of you can hear it.</p>
+    <p lang="te">మాట్లాడలేని వారి కోసం ఉచిత యాప్. మీ మాట టైప్ చేయండి, స్పీకర్ బటన్ నొక్కండి, Svaram దాన్ని గట్టిగా చెబుతుంది.</p>
+
+    <h2>This is a beta</h2>
+    <ul>
+      <li>Svaram speaks Telugu, Hindi, Tamil, Kannada, Malayalam, Marathi, Bengali, Punjabi, Assamese, Gujarati, Odia and Dogri. Type in English, pick the language under “Svaram speaks”, and Svaram translates it, shows it, and says it aloud. Or type in <a href="/te/">Telugu</a>, <a href="/hi/">Hindi</a>, <a href="/ta/">Tamil</a> <a href="/kn/">Kannada</a>, <a href="/mr/">Marathi</a>, <a href="/bn/">Bengali</a>, <a href="/pa/">Punjabi</a>, <a href="/ml/">Malayalam</a>, <a href="/as/">Assamese</a>, <a href="/gu/">Gujarati</a>, <a href="/or/">Odia</a> or <a href="/doi/">Dogri</a> and it is spoken exactly as typed.</li>
+      <li>Machine translation can be wrong. For medicines, allergies and emergencies, also show the screen to the listener.</li>
+      <li>Names and English words typed in English letters cannot be spoken yet. Svaram marks them so you can type them in the letters of the language. It never skips a word without telling you.</li>
+      <li>The voices may mispronounce some words, especially medicine names and personal names. Tamil, Kannada, Malayalam, Marathi, Bengali, Punjabi, Assamese, Gujarati, Odia and Dogri are new: numbers joined to word endings may sound slightly unnatural. We are testing every language with native listeners.</li>
+      <li>Svaram needs an internet connection. When many people use it at once it may ask you to wait a moment.</li>
+    </ul>
+
+    <h2>Privacy</h2>
+    <ul>
+      <li><strong>Nothing you type is stored.</strong> Your text is translated and turned into speech in the server's memory and discarded as soon as the audio is sent back. It is not written to disk, logs or any database.</li>
+      <li><strong>Nothing you type leaves Svaram's server.</strong> Translation and speech both run on Svaram's own computer. No outside translation or speech service is used.</li>
+      <li>No sign-up, no cookies, no ads, no analytics, no third-party scripts or fonts. The only things remembered are the language you pick under “Svaram speaks” and the last few languages you used, and they stay in your own browser.</li>
+      <li>The web server keeps a short technical log for security and capacity: the page address requested, the time, the result and its size, and a shortened IP address (the last part removed). It never contains your text.</li>
+      <li>The connection is encrypted (HTTPS).</li>
+    </ul>
+
+    <h2>Credits</h2>
+    <p><strong>Voice.</strong> Telugu, Tamil, Kannada, Malayalam, Marathi, Bengali, Punjabi and Assamese speech synthesis uses the VITS Rasa model by AI4Bharat (<a href="https://huggingface.co/ai4bharat/vits_rasa_13" rel="noopener">huggingface.co/ai4bharat/vits_rasa_13</a>), licensed under CC BY 4.0 (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">creativecommons.org/licenses/by/4.0</a>). Svaram runs an ONNX conversion of that model made by a third party, MatiasLin (<a href="https://huggingface.co/MatiasLin/sherpa-onnx-vits-rasa-13" rel="noopener">sherpa-onnx-vits-rasa-13</a>), not by AI4Bharat. Svaram prepares the text before speaking it, for example reading numbers, times and money as words in each language.</p>
+    <p><strong>Hindi voice.</strong> Hindi speech uses Kokoro-82M by hexgrad (<a href="https://huggingface.co/hexgrad/Kokoro-82M" rel="noopener">huggingface.co/hexgrad/Kokoro-82M</a>), licensed under the Apache License 2.0, run with kokoro-onnx by thewh1teagle (<a href="https://github.com/thewh1teagle/kokoro-onnx" rel="noopener">github.com/thewh1teagle/kokoro-onnx</a>, MIT). Hindi pronunciation is worked out by eSpeak NG (<a href="https://github.com/espeak-ng/espeak-ng" rel="noopener">github.com/espeak-ng/espeak-ng</a>, GPL-3.0), which runs unmodified on Svaram's server. Svaram reads numbers, times and money as Hindi words before speaking.</p>
+    <p><strong>Gujarati and Odia voice.</strong> Gujarati and Odia speech uses Indic-TTS by AI4Bharat (<a href="https://github.com/AI4Bharat/Indic-TTS" rel="noopener">github.com/AI4Bharat/Indic-TTS</a>, MIT), run with Coqui TTS (<a href="https://github.com/idiap/coqui-ai-TTS" rel="noopener">github.com/idiap/coqui-ai-TTS</a>, MPL-2.0) and PyTorch (BSD) on Svaram's server. The voices were trained on the Indic TTS database of IIT Madras: Copyright © TTS Consortium, TDIL, Meity; represented by Hema A. Murthy and S. Umesh, Department of Computer Science and Engineering and Electrical Engineering, IIT Madras (<a href="https://www.iitm.ac.in/donlab/indictts/" rel="noopener">iitm.ac.in/donlab/indictts</a>). Svaram reads numbers, times and money as Gujarati or Odia words before speaking.</p>
+    <p><strong>Translation.</strong> English to Telugu, Hindi, Tamil, Kannada, Malayalam, Marathi, Bengali, Punjabi, Assamese, Gujarati, Odia and Dogri translation uses IndicTrans2 by AI4Bharat (<a href="https://huggingface.co/ai4bharat/indictrans2-en-indic-dist-200M" rel="noopener">indictrans2-en-indic-dist-200M</a>), licensed under the MIT licence, with the IndicTransToolkit (MIT).</p>
+    <p><strong>Voice algorithms</strong> are forked from <a href="https://farmhawk.ai" rel="noopener">FarmHawk</a>, which reads farm health summaries aloud to farmers in their own language.</p>
+    <p>AI4Bharat and hexgrad do not endorse Svaram.</p>
+
+    <h2>Who runs it</h2>
+    <p>Svaram is built by Kratos Innovation Labs. Free to use. No subscription. No payment per message. No advertisements. Fair-use limits apply to protect service availability.</p>
+
+    <p><a href="/">← Back to Svaram</a></p>
+  </main>
+</div>
+</body>
+</html>

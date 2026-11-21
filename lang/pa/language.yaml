@@ -1,0 +1,33 @@
+code: pa
+name: Punjabi
+native: ਪੰਜਾਬੀ
+script_block:
+- 0A00
+- 0A7F
+status: live
+script_font: noto-sans-gurmukhi-gurmukhi-400-normal.woff2
+translate_target: pan_Guru
+voice:
+  service: rasa
+  voice: '15:4'
+segments:
+  first_max: 41
+  first_split: 27
+ui:
+  speak: ਬੋਲੋ
+  stop: ਰੁਕੋ
+  speaking: ਬੋਲ ਰਿਹਾ ਹੈ
+  translating: ਅਨੁਵਾਦ ਹੋ ਰਿਹਾ ਹੈ
+  busy: ਥੋੜ੍ਹਾ ਰੁਕੋ
+  ready: ਤਿਆਰ ਹੋ ਰਿਹਾ ਹੈ
+  first: ਪਹਿਲਾਂ ਕੁਝ ਟਾਈਪ ਕਰੋ
+  typeHere: 'Type in Punjabi instead · '
+  typeNative: ਪੰਜਾਬੀ ਵਿੱਚ ਟਾਈਪ ਕਰੋ
+page:
+  title: ਪੰਜਾਬੀ ਵਿੱਚ ਟਾਈਪ ਕਰੋ
+  step1: ਆਪਣੀ ਗੱਲ ਪੰਜਾਬੀ ਵਿੱਚ ਟਾਈਪ ਕਰੋ।
+  step2: ਸਪੀਕਰ ਬਟਨ ਦਬਾਓ।
+  phrases_head: ਝਟਪਟ ਵਾਕ · ਦਬਾਉਂਦੇ ਹੀ ਬੋਲੇਗਾ
+  more: ਹੋਰ (12)
+  less: ਘੱਟ
+  placeholder: ਇੱਥੇ ਟਾਈਪ ਕਰੋ…

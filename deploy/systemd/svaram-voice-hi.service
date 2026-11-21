@@ -1,0 +1,61 @@
+# Sample unit from svaram.live. Install to /etc/systemd/system/; settings in /etc/svaram/*.env.
+[Unit]
+Description=SVARAM Hindi voice, in memory (127.0.0.1:8202)
+# Kokoro-82M (Apache-2.0) via kokoro-onnx (MIT); espeak-ng (GPL-3.0), installed separately, does the Hindi pronunciation.
+After=network.target
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=svaram-voice-hi
+Group=svaram-voice-hi
+WorkingDirectory=/opt/svaram/src/voices/kokoro
+Environment=SVARAM_SRC=/opt/svaram/src
+EnvironmentFile=/etc/svaram/voice-hi.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=OMP_NUM_THREADS=2
+Environment=HOME=/run/svaram-voice-hi
+Environment=XDG_CACHE_HOME=/run/svaram-voice-hi/cache
+RuntimeDirectory=svaram-voice-hi
+RuntimeDirectoryMode=0700
+ExecStart=/opt/svaram/voice-hi/venv/bin/uvicorn svaram_voice_hi:app --app-dir /opt/svaram/src/voices/kokoro --host 127.0.0.1 --port 8202 --workers 1 --no-access-log --log-level warning --no-server-header
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=120
+
+CPUQuota=200%
+MemoryMax=1536M
+MemorySwapMax=0
+LimitCORE=0
+TasksMax=64
+
+StandardOutput=null
+StandardError=journal
+PrivateTmp=yes
+UMask=0077
+
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadOnlyPaths=/opt/svaram
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+ProtectHostname=yes
+RestrictNamespaces=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+SystemCallArchitectures=native
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+IPAddressDeny=any
+IPAddressAllow=localhost
+
+[Install]
+WantedBy=multi-user.target

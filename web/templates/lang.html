@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="{{code}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{robots_meta}}<meta name="theme-color" content="#F7F7F5">
+<title>Svaram · {{page.title}}</title>
+<meta name="description" content="Type in {{name}} and Svaram says it aloud. Free, no sign-up, nothing stored.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/brand/favicon-192.png">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<link rel="preload" href="/fonts/{{script_font}}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/app.css?v={{asset_version}}">
+</head>
+<body data-mode="speak" data-lang="{{code}}">
+<div class="page">
+  <header class="bar">
+    <a href="/" class="logo-link">
+      <picture>
+        <source srcset="/brand/logo-white-600.png" media="(prefers-color-scheme: dark)">
+        <img src="/brand/logo-dark-600.png" alt="Svaram" width="62" height="40" class="logo">
+      </picture>
+    </a>
+    <span class="badge">Beta · {{native}}</span>
+  </header>
+
+  <main>
+    <ol class="steps" aria-label="How to use">
+      <li><span class="num" aria-hidden="true">1</span>
+        <span>{{page.step1}}<br><span class="en" lang="en">Type what you want to say, in {{name}}.</span></span></li>
+      <li><span class="num" aria-hidden="true">2</span>
+        <span>{{page.step2}}<br><span class="en" lang="en">Tap the speaker button. Svaram says it aloud.</span></span></li>
+    </ol>
+
+    <section class="qp-wrap" aria-label="Quick phrases">
+      <div class="qp-head"><span>{{page.phrases_head}}</span><button type="button" id="qp-more" class="qp-more" aria-expanded="false" data-more="{{page.more}}" data-less="{{page.less}}">{{page.more}}</button></div>
+      <div class="qp-grid">
+{{phrase_buttons}}      </div>
+    </section>
+    <div class="field">
+      <label for="msg" lang="en">Your message</label>
+      <textarea id="msg" maxlength="500" rows="6" placeholder="{{page.placeholder}}" autocomplete="off" spellcheck="false" aria-describedby="hint count"></textarea>
+      <div class="meta" lang="en">
+        <span id="hint">Numbers, BP, ATM are fine. Names: type them in {{name}} letters.</span>
+        <span id="count" aria-live="off">0 / 500</span>
+      </div>
+    </div>
+
+    <section id="te-card" class="te-card" aria-live="polite" hidden>
+      <span class="te-label">Saying</span>
+      <p id="te-text" class="te-text" lang="{{code}}"></p>
+      <div id="num-warn" class="num-warn" hidden></div>
+      <p class="te-note" hidden></p>
+    </section>
+
+    <div id="check" class="check" role="alert" hidden>
+      <p class="check-text" id="check-text" lang="{{code}}"></p>
+      <p class="check-title" id="check-title" lang="en"></p>
+      <p class="check-help" lang="en">Type it in {{name}} letters, or speak the rest without it.</p>
+      <div class="check-actions">
+        <button type="button" id="fix" class="btn-outline" lang="en">Fix the word</button>
+        <button type="button" id="rest" class="btn-dark" lang="en">Speak the rest</button>
+      </div>
+    </div>
+
+    <div class="speak">
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <button type="button" id="speak" class="speak-btn" aria-label="Speak this message">
+        <svg class="ic-speak" aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>
+        <svg class="ic-stop" aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>
+      </button>
+      <span id="speak-label" class="speak-label" aria-hidden="true"><span lang="en">Speak</span> · <span lang="{{code}}">{{ui.speak}}</span></span>
+    </div>
+    <p class="switch-mode"><a href="/">Type in English instead</a></p>
+    <p class="switch-mode other-langs">Type in: {{other_langs}}</p>
+  </main>
+
+  <footer class="foot" lang="en">
+    Free to use. Nothing you type is stored. Fair-use limits apply.<br>
+    {{voice_credit}}<br>
+    {{footer_extra}}
+  </footer>
+</div>
+<audio id="player" preload="none"></audio>
+<script src="/app.js?v={{asset_version}}"></script>
+</body>
+</html>

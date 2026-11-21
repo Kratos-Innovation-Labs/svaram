@@ -1,0 +1,39 @@
+# Settings for one Svaram site. tools/build_site.py reads this file and the language packs
+# in lang/ and writes the public web folder. Change these values when you run your own copy.
+
+domain: svaram.live
+
+# Version strings added to file links so browsers fetch new copies after an update.
+asset_version: s300-030
+phrase_version: s300-032-v2
+
+# Languages shown on the site, in this order. Each needs a pack in lang/<code>/ with status: live.
+languages: [te, hi, ta, kn, mr, bn, pa, ml, as, gu, or, doi]
+default_language: te
+
+# true: search engines may list the site (robots.txt and sitemap.xml are written).
+# false: every page asks search engines not to list it.
+allow_search: true
+
+# Last line of every page's footer (HTML).
+footer_extra: 'Voice algorithms forked from <a href="https://farmhawk.ai" rel="noopener">FarmHawk</a> · <a href="/about/">About and privacy</a>'
+
+# Credits for each voice service and for translation (HTML). "page" is used on a language's
+# own page, "home" in the home page footer, where the languages using that voice are named.
+credits:
+  rasa:
+    page_prefix: Voice model
+    page: '<a href="https://huggingface.co/ai4bharat/vits_rasa_13" rel="noopener">VITS Rasa by AI4Bharat</a> (CC BY 4.0), ONNX by <a href="https://huggingface.co/MatiasLin/sherpa-onnx-vits-rasa-13" rel="noopener">MatiasLin / sherpa-onnx</a>'
+    home: '<a href="https://huggingface.co/ai4bharat/vits_rasa_13" rel="noopener">VITS Rasa by AI4Bharat</a> (CC BY 4.0), ONNX by <a href="https://huggingface.co/MatiasLin/sherpa-onnx-vits-rasa-13" rel="noopener">MatiasLin / sherpa-onnx</a>'
+  translate:
+    home: 'Translation: <a href="https://huggingface.co/ai4bharat/indictrans2-en-indic-dist-200M" rel="noopener">IndicTrans2 by AI4Bharat</a> (MIT)'
+  kokoro:
+    page_prefix: Hindi voice
+    page: '<a href="https://huggingface.co/hexgrad/Kokoro-82M" rel="noopener">Kokoro-82M by hexgrad</a> (Apache-2.0), run with <a href="https://github.com/thewh1teagle/kokoro-onnx" rel="noopener">kokoro-onnx</a> (MIT)'
+    home: '<a href="https://huggingface.co/hexgrad/Kokoro-82M" rel="noopener">Kokoro-82M by hexgrad</a> (Apache-2.0)'
+  indictts:
+    page_prefix: Voice model
+    page: '<a href="https://github.com/AI4Bharat/Indic-TTS" rel="noopener">Indic-TTS by AI4Bharat</a> (MIT), trained on the <a href="https://www.iitm.ac.in/donlab/indictts/" rel="noopener">IIT Madras Indic TTS database</a> (© TTS Consortium, TDIL, MeitY)'
+    home: '<a href="https://github.com/AI4Bharat/Indic-TTS" rel="noopener">Indic-TTS by AI4Bharat</a> (MIT), trained on the <a href="https://www.iitm.ac.in/donlab/indictts/" rel="noopener">IIT Madras Indic TTS database</a> (© TTS Consortium, TDIL, MeitY)'
+# Order of the credits in the home page footer.
+home_credit_order: [rasa, translate, kokoro, indictts]

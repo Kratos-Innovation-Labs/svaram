@@ -1,0 +1,33 @@
+code: kn
+name: Kannada
+native: ಕನ್ನಡ
+script_block:
+- 0C80
+- 0CFF
+status: live
+script_font: noto-sans-kannada-kannada-400-normal.woff2
+translate_target: kan_Knda
+voice:
+  service: rasa
+  voice: '8:4'
+segments:
+  first_max: 41
+  first_split: 27
+ui:
+  speak: ಹೇಳು
+  stop: ನಿಲ್ಲಿಸು
+  speaking: ಮಾತನಾಡುತ್ತಿದೆ
+  translating: ಅನುವಾದಿಸುತ್ತಿದೆ
+  busy: ಸ್ವಲ್ಪ ಕಾಯಿರಿ
+  ready: ಸಿದ್ಧವಾಗುತ್ತಿದೆ
+  first: ಮೊದಲು ಏನಾದರೂ ಟೈಪ್ ಮಾಡಿ
+  typeHere: 'Type in Kannada instead · '
+  typeNative: ಕನ್ನಡದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ
+page:
+  title: ಕನ್ನಡದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ
+  step1: ನಿಮ್ಮ ಮಾತನ್ನು ಕನ್ನಡದಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ.
+  step2: ಸ್ಪೀಕರ್ ಬಟನ್ ಒತ್ತಿ.
+  phrases_head: ತ್ವರಿತ ಮಾತುಗಳು · ಒತ್ತಿದರೆ ಕೇಳಿಸುತ್ತದೆ
+  more: ಇನ್ನಷ್ಟು (12)
+  less: ಕಡಿಮೆ
+  placeholder: ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ…

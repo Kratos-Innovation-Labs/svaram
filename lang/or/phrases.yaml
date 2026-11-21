@@ -1,0 +1,42 @@
+- id: cannot-speak
+  english: I cannot speak
+  text: ମୁଁ କଥା କହିପାରୁନାହିଁ
+- id: help
+  english: I need help
+  text: ମୋତେ ସାହାଯ୍ୟ ଦରକାର
+- id: doctor
+  english: Call a doctor
+  text: ଦୟାକରି ଡାକ୍ତରଙ୍କୁ ଡାକନ୍ତୁ
+- id: 'yes'
+  english: 'Yes'
+  text: ହଁ
+- id: 'no'
+  english: 'No'
+  text: ନା
+- id: thanks
+  english: Thank you
+  text: ଧନ୍ୟବାଦ
+- id: hello
+  english: Hello
+  text: ନମସ୍କାର
+  extra: true
+- id: wait
+  english: Please wait
+  text: ଦୟାକରି ଟିକେ ଅପେକ୍ଷା କରନ୍ତୁ
+  extra: true
+- id: how-much
+  english: How much?
+  text: ଏହାର ଦାମ କେତେ?
+  extra: true
+- id: toilet
+  english: Where is the toilet?
+  text: ଶୌଚାଳୟ କେଉଁଠି?
+  extra: true
+- id: water
+  english: I need water
+  text: ମୋତେ ପାଣି ଦରକାର
+  extra: true
+- id: write
+  english: Please write it down
+  text: ଦୟାକରି ଲେଖି ଦେଖାନ୍ତୁ
+  extra: true

@@ -1,0 +1,42 @@
+- id: cannot-speak
+  english: I cannot speak
+  text: నేను మాట్లాడలేను
+- id: help
+  english: I need help
+  text: నాకు సహాయం కావాలి
+- id: doctor
+  english: Call a doctor
+  text: దయచేసి డాక్టర్‌ని పిలవండి
+- id: 'yes'
+  english: 'Yes'
+  text: అవును
+- id: 'no'
+  english: 'No'
+  text: కాదు
+- id: thanks
+  english: Thank you
+  text: ధన్యవాదాలు
+- id: hello
+  english: Hello
+  text: నమస్కారం
+  extra: true
+- id: wait
+  english: Please wait
+  text: దయచేసి కొంచెం ఆగండి
+  extra: true
+- id: how-much
+  english: How much?
+  text: ఎంత?
+  extra: true
+- id: toilet
+  english: Where is the toilet?
+  text: టాయిలెట్ ఎక్కడ ఉంది?
+  extra: true
+- id: water
+  english: I need water
+  text: నాకు నీళ్ళు కావాలి
+  extra: true
+- id: write
+  english: Please write it down
+  text: దయచేసి రాసి చూపించండి
+  extra: true

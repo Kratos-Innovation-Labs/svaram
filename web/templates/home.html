@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{robots_meta}}<meta name="theme-color" content="#F7F7F5">
+<title>Svaram · Type in English, be heard in your language</title>
+<meta name="description" content="Free for people who cannot speak: type in English and Svaram says it aloud in {{language_count_words}} Indian languages. Nothing is stored.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<link rel="preload" href="/fonts/noto-sans-telugu-telugu-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/app.css?v={{asset_version}}">
+</head>
+<body data-mode="convey" data-lang="{{default.code}}">
+<div class="page">
+  <header class="bar">
+    <a href="/" class="logo-link">
+      <picture>
+        <source srcset="/brand/logo-white-600.png" media="(prefers-color-scheme: dark)">
+        <img src="/brand/logo-dark-600.png" alt="Svaram" width="62" height="40" class="logo">
+      </picture>
+    </a>
+    <span class="badge">Beta · English → <span class="L-native" lang="{{default.code}}">{{default.native}}</span></span>
+  </header>
+
+  <main>
+    <div class="lang-row">
+      <span class="lang-label" id="speaks-label">Svaram speaks</span>
+      <div class="lang-controls">
+        <button type="button" id="lang-btn" class="lang-btn" aria-haspopup="dialog" aria-controls="lang-sheet">
+          <span class="sr-only">Svaram speaks </span><span class="lang-native L-native" lang="{{default.code}}">{{default.native}}</span>
+          <span class="lang-en L-name">{{default.name}}</span><span class="sr-only">. Change language</span>
+          <svg class="chev" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <span id="lang-recent" class="lang-recent"></span>
+      </div>
+    </div>
+    <p class="lang-line">You type in <strong>English</strong>. Svaram says it in <strong class="L-name">{{default.name}}</strong>.</p>
+    <ol class="steps" aria-label="How to use">
+      <li><span class="num" aria-hidden="true">1</span><span>Type what you want to say, in English.</span></li>
+      <li><span class="num" aria-hidden="true">2</span><span>Tap the speaker. Svaram translates it, shows the <span class="L-name">{{default.name}}</span>, and says it aloud.</span></li>
+    </ol>
+
+    <section class="qp-wrap" aria-label="Quick phrases">
+      <div class="qp-head"><span>Quick phrases · tap to speak</span><button type="button" id="qp-more" class="qp-more" aria-expanded="false" data-more="More phrases (12)" data-less="Fewer">More phrases (12)</button></div>
+      <div class="qp-grid">
+{{phrase_buttons}}      </div>
+    </section>
+    <div class="field">
+      <label for="msg">Or type your own (English)</label>
+      <textarea id="msg" class="en-input" maxlength="500" rows="5" placeholder="Type in English…" autocomplete="off" aria-describedby="hint count"></textarea>
+      <div class="meta">
+        <span id="hint">Names, medicines and numbers are fine.</span>
+        <span id="count" aria-live="off">0 / 500</span>
+      </div>
+    </div>
+
+    <section id="te-card" class="te-card" aria-live="polite" hidden>
+      <span class="te-label">Saying in <span class="L-name">{{default.name}}</span></span>
+      <p id="te-text" class="te-text" lang="{{default.code}}"></p>
+      <div id="num-warn" class="num-warn" hidden>
+        <p><strong>The numbers in the <span class="L-name">{{default.name}}</span> differ from your message.</strong> Check before speaking.</p>
+        <button type="button" id="anyway" class="btn-dark">Speak anyway</button>
+      </div>
+      <p class="te-note">Machine translation (beta). For medicines, allergies and emergencies, also show this screen to the listener.</p>
+    </section>
+
+    <div id="check" class="check" role="alert" hidden>
+      <p class="check-text" id="check-text" lang="{{default.code}}"></p>
+      <p class="check-title" id="check-title"></p>
+      <p class="check-help" id="check-help"></p>
+      <div class="check-actions">
+        <button type="button" id="fix" class="btn-outline">Edit my message</button>
+        <button type="button" id="rest" class="btn-dark">Speak the rest</button>
+      </div>
+    </div>
+
+    <div class="speak">
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <button type="button" id="speak" class="speak-btn" aria-label="Translate and speak in {{default.name}}">
+        <svg class="ic-speak" aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>
+        <svg class="ic-stop" aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>
+      </button>
+      <span id="speak-label" class="speak-label" aria-hidden="true">Speak in {{default.name}} · <span lang="{{default.code}}">{{default.ui.speak}}</span></span>
+    </div>
+    <p class="switch-mode"><a id="type-native" href="/{{default.code}}/">{{default.ui.typeHere}}<span lang="{{default.code}}">{{default.ui.typeNative}}</span></a></p>
+  </main>
+
+  <footer class="foot">
+    Free to use. Nothing you type is stored. Fair-use limits apply.<br>
+    {{voice_credits}}<br>
+    {{footer_extra}}
+  </footer>
+</div>
+<dialog id="lang-sheet" class="sheet" aria-labelledby="sheet-title">
+  <div class="sheet-grip" aria-hidden="true"></div>
+  <div class="sheet-head">
+    <h2 id="sheet-title">Svaram speaks…</h2>
+    <button type="button" id="sheet-close" class="sheet-close" aria-label="Close"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  </div>
+  <p class="sheet-sub" id="sheet-recent-label">Recent</p>
+  <div class="tiles tiles-3" id="tiles-recent" role="radiogroup" aria-labelledby="sheet-recent-label"></div>
+  <p class="sheet-sub" id="sheet-all-label">All languages</p>
+  <div class="tiles" id="tiles-all" role="radiogroup" aria-labelledby="sheet-all-label"></div>
+</dialog>
+<audio id="player" preload="none"></audio>
+<script src="/app.js?v={{asset_version}}"></script>
+</body>
+</html>

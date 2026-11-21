@@ -1,0 +1,33 @@
+code: ta
+name: Tamil
+native: தமிழ்
+script_block:
+- 0B80
+- 0BFF
+status: live
+script_font: noto-sans-tamil-tamil-400-normal.woff2
+translate_target: tam_Taml
+voice:
+  service: rasa
+  voice: '18:4'
+segments:
+  first_max: 52
+  first_split: 35
+ui:
+  speak: பேசு
+  stop: நிறுத்து
+  speaking: பேசுகிறது
+  translating: மொழிபெயர்க்கிறது
+  busy: சற்று காத்திருங்கள்
+  ready: தயாராகிறது
+  first: முதலில் ஏதாவது தட்டச்சு செய்யுங்கள்
+  typeHere: 'Type in Tamil instead · '
+  typeNative: தமிழில் தட்டச்சு செய்யுங்கள்
+page:
+  title: தமிழில் தட்டச்சு செய்யுங்கள்
+  step1: உங்கள் செய்தியை தமிழில் தட்டச்சு செய்யுங்கள்.
+  step2: ஸ்பீக்கர் பொத்தானை அழுத்துங்கள்.
+  phrases_head: விரைவு வாக்கியங்கள் · அழுத்தினால் பேசும்
+  more: மேலும் (12)
+  less: குறைவாக
+  placeholder: இங்கே தட்டச்சு செய்யுங்கள்…

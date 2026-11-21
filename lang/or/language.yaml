@@ -1,0 +1,33 @@
+code: or
+name: Odia
+native: ଓଡ଼ିଆ
+script_block:
+- 0B00
+- 0B7F
+status: live
+script_font: noto-sans-oriya-oriya-400-normal.woff2
+translate_target: ory_Orya
+voice:
+  service: indictts
+  voice: female
+segments:
+  first_max: 30
+  first_split: 20
+ui:
+  speak: କୁହନ୍ତୁ
+  stop: ବନ୍ଦ କରନ୍ତୁ
+  speaking: କହୁଛି
+  translating: ଅନୁବାଦ ହେଉଛି
+  busy: ଟିକେ ଅପେକ୍ଷା କରନ୍ତୁ
+  ready: ପ୍ରସ୍ତୁତ ହେଉଛି
+  first: ପ୍ରଥମେ କିଛି ଟାଇପ କରନ୍ତୁ
+  typeHere: 'Type in Odia instead · '
+  typeNative: ଓଡ଼ିଆରେ ଟାଇପ କରନ୍ତୁ
+page:
+  title: ଓଡ଼ିଆରେ ଟାଇପ କରନ୍ତୁ
+  step1: ଆପଣ ଯାହା କହିବାକୁ ଚାହାଁନ୍ତି ଓଡ଼ିଆରେ ଟାଇପ କରନ୍ତୁ।
+  step2: ସ୍ପିକର ବଟନ ଦବାନ୍ତୁ।
+  phrases_head: ଶୀଘ୍ର ବାକ୍ୟ · ଦବାଇଲେ କହିବ
+  more: ଅଧିକ (12)
+  less: କମ
+  placeholder: ଏଠାରେ ଟାଇପ କରନ୍ତୁ…

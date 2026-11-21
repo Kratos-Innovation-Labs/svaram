@@ -1,0 +1,90 @@
+- text: నేను మాట్లాడలేను
+  spoken: నేను మాట్లాడలేను
+  ok: true
+- text: నాకు సహాయం కావాలి
+  spoken: నాకు సహాయం కావాలి
+  ok: true
+- text: దయచేసి డాక్టర్‌ని పిలవండి
+  spoken: దయచేసి డాక్టర్‌ని పిలవండి
+  ok: true
+- text: అవును
+  spoken: అవును
+  ok: true
+- text: కాదు
+  spoken: కాదు
+  ok: true
+- text: ధన్యవాదాలు
+  spoken: ధన్యవాదాలు
+  ok: true
+- text: నమస్కారం
+  spoken: నమస్కారం
+  ok: true
+- text: దయచేసి కొంచెం ఆగండి
+  spoken: దయచేసి కొంచెం ఆగండి
+  ok: true
+- text: ఎంత?
+  spoken: ఎంత?
+  ok: true
+- text: టాయిలెట్ ఎక్కడ ఉంది?
+  spoken: టాయిలెట్ ఎక్కడ ఉంది?
+  ok: true
+- text: నాకు నీళ్ళు కావాలి
+  spoken: నాకు నీళ్ళు కావాలి
+  ok: true
+- text: దయచేసి రాసి చూపించండి
+  spoken: దయచేసి రాసి చూపించండి
+  ok: true
+- text: '2'
+  spoken: రెండు
+  ok: true
+- text: '15'
+  spoken: పదిహేను
+  ok: true
+- text: '250'
+  spoken: రెండు వందల యాభై
+  ok: true
+- text: 1,45,622
+  spoken: ఒక లక్ష నలభై ఐదు వేల ఆరు వందల ఇరవై రెండు
+  ok: true
+- text: '2.5'
+  spoken: రెండు పాయింట్ ఐదు
+  ok: true
+- text: '10:30'
+  spoken: పది గంటల ముప్పై నిమిషాలు
+  ok: true
+- text: 9:05 PM
+  spoken: సాయంత్రం తొమ్మిది గంటల ఐదు నిమిషాలు
+  ok: true
+- text: ₹250
+  spoken: రెండు వందల యాభై రూపాయలు
+  ok: true
+- text: ₹99.50
+  spoken: తొంభై తొమ్మిది రూపాయల యాభై పైసలు
+  ok: true
+- text: 98480 12345
+  spoken: తొమ్మిది ఎనిమిది నాలుగు ఎనిమిది సున్నా, ఒకటి రెండు మూడు నాలుగు ఐదు
+  ok: true
+- text: 15/08/2026
+  spoken: పదిహేను ఆగస్టు రెండు వేల ఇరవై ఆరు
+  ok: true
+- text: 50%
+  spoken: యాభై శాతం
+  ok: true
+- text: 500 mg
+  spoken: ఐదు వందలు మిల్లీగ్రాములు
+  ok: true
+- text: BP
+  spoken: బి.పి.
+  ok: true
+- text: ATM
+  spoken: ఏ.టి.ఎం.
+  ok: true
+- text: doctor
+  spoken: డాక్టర్
+  ok: true
+- text: Ramesh
+  spoken: ''
+  ok: false
+- text: '108'
+  spoken: ఒకటి సున్నా ఎనిమిది
+  ok: true

@@ -1,0 +1,33 @@
+code: mr
+name: Marathi
+native: मराठी
+script_block:
+- 0900
+- 097F
+status: live
+script_font: noto-sans-devanagari-devanagari-400-normal.woff2
+translate_target: mar_Deva
+voice:
+  service: rasa
+  voice: '12:4'
+segments:
+  first_max: 36
+  first_split: 24
+ui:
+  speak: बोला
+  stop: थांबा
+  speaking: बोलत आहे
+  translating: भाषांतर होत आहे
+  busy: थोडे थांबा
+  ready: तयार होत आहे
+  first: आधी काहीतरी टाइप करा
+  typeHere: 'Type in Marathi instead · '
+  typeNative: मराठीत टाइप करा
+page:
+  title: मराठीत टाइप करा
+  step1: तुमचे म्हणणे मराठीत टाइप करा.
+  step2: स्पीकर बटण दाबा.
+  phrases_head: झटपट वाक्ये · दाबताच बोलेल
+  more: आणखी (12)
+  less: कमी
+  placeholder: इथे टाइप करा…

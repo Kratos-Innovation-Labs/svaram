@@ -1,0 +1,33 @@
+code: bn
+name: Bengali
+native: বাংলা
+script_block:
+- 0980
+- 09FF
+status: live
+script_font: noto-sans-bengali-bengali-400-normal.woff2
+translate_target: ben_Beng
+voice:
+  service: rasa
+  voice: '2:4'
+segments:
+  first_max: 43
+  first_split: 29
+ui:
+  speak: বলো
+  stop: থামো
+  speaking: বলছে
+  translating: অনুবাদ হচ্ছে
+  busy: একটু অপেক্ষা করুন
+  ready: তৈরি হচ্ছে
+  first: আগে কিছু টাইপ করুন
+  typeHere: 'Type in Bengali instead · '
+  typeNative: বাংলায় টাইপ করুন
+page:
+  title: বাংলায় টাইপ করুন
+  step1: আপনার কথা বাংলায় টাইপ করুন।
+  step2: স্পিকার বোতাম টিপুন।
+  phrases_head: দ্রুত বাক্য · টিপলেই বলবে
+  more: আরও (12)
+  less: কম
+  placeholder: এখানে টাইপ করুন…

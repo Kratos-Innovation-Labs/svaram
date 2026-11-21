@@ -1,0 +1,90 @@
+- text: என்னால் பேச முடியாது
+  spoken: என்னால் பேச முடியாது
+  ok: true
+- text: எனக்கு உதவி வேண்டும்
+  spoken: எனக்கு உதவி வேண்டும்
+  ok: true
+- text: தயவுசெய்து டாக்டரை அழையுங்கள்
+  spoken: தயவுசெய்து டாக்டரை அழையுங்கள்
+  ok: true
+- text: ஆம்
+  spoken: ஆம்
+  ok: true
+- text: இல்லை
+  spoken: இல்லை
+  ok: true
+- text: நன்றி
+  spoken: நன்றி
+  ok: true
+- text: வணக்கம்
+  spoken: வணக்கம்
+  ok: true
+- text: தயவுசெய்து காத்திருங்கள்
+  spoken: தயவுசெய்து காத்திருங்கள்
+  ok: true
+- text: இது எவ்வளவு?
+  spoken: இது எவ்வளவு?
+  ok: true
+- text: கழிப்பறை எங்கே?
+  spoken: கழிப்பறை எங்கே?
+  ok: true
+- text: எனக்கு தண்ணீர் வேண்டும்
+  spoken: எனக்கு தண்ணீர் வேண்டும்
+  ok: true
+- text: தயவுசெய்து எழுதிக் காட்டுங்கள்
+  spoken: தயவுசெய்து எழுதிக் காட்டுங்கள்
+  ok: true
+- text: '2'
+  spoken: இரண்டு
+  ok: true
+- text: '15'
+  spoken: பதினைந்து
+  ok: true
+- text: '250'
+  spoken: இருநூற்று ஐம்பது
+  ok: true
+- text: 1,45,622
+  spoken: ஒரு லட்சத்து நாற்பத்து ஐந்து ஆயிரத்து அறுநூற்று இருபத்து இரண்டு
+  ok: true
+- text: '2.5'
+  spoken: இரண்டு புள்ளி ஐந்து
+  ok: true
+- text: '10:30'
+  spoken: பத்து மணி முப்பது நிமிடம்
+  ok: true
+- text: 9:05 PM
+  spoken: இரவு ஒன்பது மணி ஐந்து நிமிடம்
+  ok: true
+- text: ₹250
+  spoken: இருநூற்று ஐம்பது ரூபாய்
+  ok: true
+- text: ₹99.50
+  spoken: தொண்ணூற்று ஒன்பது ரூபாய் ஐம்பது பைசா
+  ok: true
+- text: 98480 12345
+  spoken: ஒன்பது எட்டு நான்கு எட்டு பூஜ்ஜியம், ஒன்று இரண்டு மூன்று நான்கு ஐந்து
+  ok: true
+- text: 15/08/2026
+  spoken: ஆகஸ்ட் பதினைந்து இரண்டாயிரத்து இருபத்து ஆறு
+  ok: true
+- text: 50%
+  spoken: ஐம்பது சதவீதம்
+  ok: true
+- text: 500 mg
+  spoken: ஐந்நூறு மில்லிகிராம்
+  ok: true
+- text: BP
+  spoken: பி பி
+  ok: true
+- text: ATM
+  spoken: ஏ டி எம்
+  ok: true
+- text: doctor
+  spoken: டாக்டர்
+  ok: true
+- text: Ramesh
+  spoken: ''
+  ok: false
+- text: '108'
+  spoken: நூற்று எட்டு
+  ok: true

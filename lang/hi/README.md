@@ -1,0 +1,11 @@
+# Hindi (हिन्दी)
+
+- Voice: Kokoro-82M (kokoro service), voice `hf_alpha`
+- Translation from English: IndicTrans2, target `hin_Deva`
+- Text preparation: its own prepare() in conv.py
+- Made by: Kratos Innovation Labs for svaram.live; live since November 2026
+- Review: phrases checked by machine (speech-recogniser round trip) during the beta; review by
+  fluent speakers welcome
+
+Known gaps: personal names and English words outside the lexicon are reported, not spoken; type
+them in Hindi letters.

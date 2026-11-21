@@ -1,0 +1,33 @@
+code: gu
+name: Gujarati
+native: ગુજરાતી
+script_block:
+- 0A80
+- 0AFF
+status: live
+script_font: noto-sans-gujarati-gujarati-400-normal.woff2
+translate_target: guj_Gujr
+voice:
+  service: indictts
+  voice: female
+segments:
+  first_max: 24
+  first_split: 16
+ui:
+  speak: બોલો
+  stop: રોકો
+  speaking: બોલી રહ્યું છે
+  translating: અનુવાદ થઈ રહ્યો છે
+  busy: થોડી રાહ જુઓ
+  ready: તૈયાર થઈ રહ્યું છે
+  first: પહેલાં કંઈક ટાઇપ કરો
+  typeHere: 'Type in Gujarati instead · '
+  typeNative: ગુજરાતીમાં ટાઇપ કરો
+page:
+  title: ગુજરાતીમાં ટાઇપ કરો
+  step1: તમારે જે કહેવું છે તે ગુજરાતીમાં ટાઇપ કરો.
+  step2: સ્પીકર બટન દબાવો.
+  phrases_head: ઝડપી વાક્યો · દબાવો એટલે બોલશે
+  more: વધુ (12)
+  less: ઓછા
+  placeholder: અહીં ટાઇપ કરો…

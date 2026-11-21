@@ -1,0 +1,90 @@
+- text: मेरे कोला बोलेआ नेईं जंदा
+  spoken: मेरे कोला बोलेआ नेईं जंदा
+  ok: true
+- text: मिगी मदद चाहिदी ऐ
+  spoken: मिगी मदद चाहिदी ऐ
+  ok: true
+- text: किरपा करियै डाक्टर गी सद्दो
+  spoken: किरपा करियै डाक्टर गी सद्दो
+  ok: true
+- text: हां
+  spoken: हां
+  ok: true
+- text: नेईं
+  spoken: नेईं
+  ok: true
+- text: धन्नवाद
+  spoken: धन्नवाद
+  ok: true
+- text: नमस्ते
+  spoken: नमस्ते
+  ok: true
+- text: किरपा करियै थोड़ा इंतजार करो
+  spoken: किरपा करियै थोड़ा इंतजार करो
+  ok: true
+- text: इसदा मुल्ल किन्ना ऐ?
+  spoken: इसदा मुल्ल किन्ना ऐ?
+  ok: true
+- text: शौचालय कुत्थै ऐ?
+  spoken: शौचालय कुत्थै ऐ?
+  ok: true
+- text: मिगी पानी चाहिदा ऐ
+  spoken: मिगी पानी चाहिदा ऐ
+  ok: true
+- text: किरपा करियै लिखियै दस्सो
+  spoken: किरपा करियै लिखियै दस्सो
+  ok: true
+- text: '2'
+  spoken: दो
+  ok: true
+- text: '15'
+  spoken: पंदरां
+  ok: true
+- text: '250'
+  spoken: दो सौ पंजाह्
+  ok: true
+- text: 1,45,622
+  spoken: इक लक्ख पंताली हजार छे सौ बाई
+  ok: true
+- text: '2.5'
+  spoken: दो दशमलव पंज
+  ok: true
+- text: '10:30'
+  spoken: दस बजियै त्रीह् मिंट
+  ok: true
+- text: 9:05 PM
+  spoken: रातीं नौ बजियै पंज मिंट
+  ok: true
+- text: ₹250
+  spoken: दो सौ पंजाह् रुपये
+  ok: true
+- text: ₹99.50
+  spoken: नड़िनवें रुपये पंजाह् पैसे
+  ok: true
+- text: 98480 12345
+  spoken: नौ अट्ठ चार अट्ठ शून्य, इक दो त्रै चार पंज
+  ok: true
+- text: 15/08/2026
+  spoken: अगस्त पंदरां दो हजार छब्बी
+  ok: true
+- text: 50%
+  spoken: पंजाह् फीसदी
+  ok: true
+- text: 500 mg
+  spoken: पंज सौ मिलीग्राम
+  ok: true
+- text: BP
+  spoken: बी पी
+  ok: true
+- text: ATM
+  spoken: ए टी एम
+  ok: true
+- text: doctor
+  spoken: डाक्टर
+  ok: true
+- text: Ramesh
+  spoken: ''
+  ok: false
+- text: '108'
+  spoken: सौ अट्ठ
+  ok: true

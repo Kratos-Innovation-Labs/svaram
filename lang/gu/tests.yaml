@@ -1,0 +1,90 @@
+- text: મારાથી બોલી શકાતું નથી
+  spoken: મારાથી બોલી શકાતું નથી
+  ok: true
+- text: મને મદદ જોઈએ છે
+  spoken: મને મદદ જોઈએ છે
+  ok: true
+- text: કૃપા કરીને ડૉક્ટરને બોલાવો
+  spoken: કૃપા કરીને ડૉક્ટરને બોલાવો
+  ok: true
+- text: હા
+  spoken: હા
+  ok: true
+- text: ના
+  spoken: ના
+  ok: true
+- text: તમારો આભાર
+  spoken: તમારો આભાર
+  ok: true
+- text: નમસ્તે
+  spoken: નમસ્તે
+  ok: true
+- text: કૃપા કરીને થોડી રાહ જુઓ
+  spoken: કૃપા કરીને થોડી રાહ જુઓ
+  ok: true
+- text: આ કેટલાનું છે?
+  spoken: આ કેટલાનું છે?
+  ok: true
+- text: શૌચાલય ક્યાં છે?
+  spoken: શૌચાલય ક્યાં છે?
+  ok: true
+- text: મને પાણી જોઈએ છે
+  spoken: મને પાણી જોઈએ છે
+  ok: true
+- text: કૃપા કરીને લખીને બતાવો
+  spoken: કૃપા કરીને લખીને બતાવો
+  ok: true
+- text: '2'
+  spoken: બે
+  ok: true
+- text: '15'
+  spoken: પંદર
+  ok: true
+- text: '250'
+  spoken: બસો પચાસ
+  ok: true
+- text: 1,45,622
+  spoken: એક લાખ પિસ્તાલીસ હજાર છસો બાવીસ
+  ok: true
+- text: '2.5'
+  spoken: બે પોઇન્ટ પાંચ
+  ok: true
+- text: '10:30'
+  spoken: દસ વાગીને ત્રીસ મિનિટે
+  ok: true
+- text: 9:05 PM
+  spoken: રાત્રે નવ વાગીને પાંચ મિનિટે
+  ok: true
+- text: ₹250
+  spoken: બસો પચાસ રૂપિયા
+  ok: true
+- text: ₹99.50
+  spoken: નવ્વાણું રૂપિયા પચાસ પૈસા
+  ok: true
+- text: 98480 12345
+  spoken: નવ આઠ ચાર આઠ શૂન્ય, એક બે ત્રણ ચાર પાંચ
+  ok: true
+- text: 15/08/2026
+  spoken: ઓગસ્ટ પંદર બે હજાર છવ્વીસ
+  ok: true
+- text: 50%
+  spoken: પચાસ ટકા
+  ok: true
+- text: 500 mg
+  spoken: પાંચસો મિલિગ્રામ
+  ok: true
+- text: BP
+  spoken: બી પી
+  ok: true
+- text: ATM
+  spoken: એ ટી એમ
+  ok: true
+- text: doctor
+  spoken: ડૉક્ટર
+  ok: true
+- text: Ramesh
+  spoken: ''
+  ok: false
+- text: '108'
+  spoken: એકસો આઠ
+  ok: true

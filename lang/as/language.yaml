@@ -1,0 +1,33 @@
+code: as
+name: Assamese
+native: অসমীয়া
+script_block:
+- 0980
+- 09FF
+status: live
+script_font: noto-sans-bengali-bengali-400-normal.woff2
+translate_target: asm_Beng
+voice:
+  service: rasa
+  voice: 0:4
+segments:
+  first_max: 41
+  first_split: 27
+ui:
+  speak: কওক
+  stop: ৰখক
+  speaking: কৈ আছে
+  translating: অনুবাদ হৈ আছে
+  busy: অলপ অপেক্ষা কৰক
+  ready: সাজু হৈ আছে
+  first: প্ৰথমে কিবা টাইপ কৰক
+  typeHere: 'Type in Assamese instead · '
+  typeNative: অসমীয়াত টাইপ কৰক
+page:
+  title: অসমীয়াত টাইপ কৰক
+  step1: আপোনাৰ কথা অসমীয়াত টাইপ কৰক।
+  step2: স্পীকাৰ বুটাম টিপক।
+  phrases_head: ক্ষিপ্ৰ বাক্য · টিপিলে কয়
+  more: আৰু (12)
+  less: কম
+  placeholder: ইয়াত টাইপ কৰক…

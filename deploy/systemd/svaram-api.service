@@ -1,0 +1,57 @@
+# Sample unit from svaram.live. Install to /etc/systemd/system/; settings in /etc/svaram/*.env.
+[Unit]
+Description=SVARAM public API for the beta page (127.0.0.1:8200)
+After=network.target svaram-voice.service
+Wants=svaram-voice.service
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=svaram-api
+Group=svaram-api
+WorkingDirectory=/opt/svaram/src/api
+Environment=SVARAM_SRC=/opt/svaram/src
+EnvironmentFile=/etc/svaram/api.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/svaram/voice/venv/bin/uvicorn svaram_api:app --app-dir /opt/svaram/src/api --host 127.0.0.1 --port 8200 --workers 1 --no-access-log --log-level warning --no-server-header
+Restart=on-failure
+RestartSec=3
+TimeoutStartSec=60
+
+CPUQuota=50%
+MemoryMax=256M
+MemorySwapMax=0
+LimitCORE=0
+TasksMax=64
+
+# privacy: nothing to disk, nothing to stdout
+StandardOutput=null
+StandardError=journal
+PrivateTmp=yes
+UMask=0077
+
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadOnlyPaths=/opt/svaram
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+ProtectHostname=yes
+RestrictNamespaces=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+LockPersonality=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+SystemCallArchitectures=native
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+IPAddressDeny=any
+IPAddressAllow=localhost
+
+[Install]
+WantedBy=multi-user.target

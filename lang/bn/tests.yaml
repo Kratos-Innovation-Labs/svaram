@@ -1,0 +1,90 @@
+- text: আমি কথা বলতে পারি না
+  spoken: আমি কথা বলতে পারি না
+  ok: true
+- text: আমার সাহায্য দরকার
+  spoken: আমার সাহায্য দরকার
+  ok: true
+- text: দয়া করে ডাক্তার ডাকুন
+  spoken: দয়া করে ডাক্তার ডাকুন
+  ok: true
+- text: হ্যাঁ
+  spoken: হ্যাঁ
+  ok: true
+- text: না
+  spoken: না
+  ok: true
+- text: ধন্যবাদ
+  spoken: ধন্যবাদ
+  ok: true
+- text: নমস্কার
+  spoken: নমস্কার
+  ok: true
+- text: দয়া করে অপেক্ষা করুন
+  spoken: দয়া করে অপেক্ষা করুন
+  ok: true
+- text: এটার দাম কত?
+  spoken: এটার দাম কত?
+  ok: true
+- text: টয়লেট কোথায়?
+  spoken: টয়লেট কোথায়?
+  ok: true
+- text: আমার জল দরকার
+  spoken: আমার জল দরকার
+  ok: true
+- text: দয়া করে লিখে দেখান
+  spoken: দয়া করে লিখে দেখান
+  ok: true
+- text: '2'
+  spoken: দুই
+  ok: true
+- text: '15'
+  spoken: পনেরো
+  ok: true
+- text: '250'
+  spoken: দুশো পঞ্চাশ
+  ok: true
+- text: 1,45,622
+  spoken: এক লাখ পঁয়তাল্লিশ হাজার ছশো বাইশ
+  ok: true
+- text: '2.5'
+  spoken: দুই দশমিক পাঁচ
+  ok: true
+- text: '10:30'
+  spoken: দশটা বেজে তিরিশ মিনিট
+  ok: true
+- text: 9:05 PM
+  spoken: রাত নয়টা বেজে পাঁচ মিনিট
+  ok: true
+- text: ₹250
+  spoken: দুশো পঞ্চাশ টাকা
+  ok: true
+- text: ₹99.50
+  spoken: নিরানব্বই টাকা পঞ্চাশ পয়সা
+  ok: true
+- text: 98480 12345
+  spoken: নয় আট চার আট শূন্য, এক দুই তিন চার পাঁচ
+  ok: true
+- text: 15/08/2026
+  spoken: আগস্ট পনেরো দুই হাজার ছাব্বিশ
+  ok: true
+- text: 50%
+  spoken: পঞ্চাশ শতাংশ
+  ok: true
+- text: 500 mg
+  spoken: পাঁচশো মিলিগ্রাম
+  ok: true
+- text: BP
+  spoken: বি পি
+  ok: true
+- text: ATM
+  spoken: এ টি এম
+  ok: true
+- text: doctor
+  spoken: ডাক্তার
+  ok: true
+- text: Ramesh
+  spoken: ''
+  ok: false
+- text: '108'
+  spoken: একশো আট
+  ok: true

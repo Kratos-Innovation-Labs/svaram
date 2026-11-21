@@ -1,0 +1,90 @@
+- text: എനിക്ക് സംസാരിക്കാൻ കഴിയില്ല
+  spoken: എനിക്ക് സംസാരിക്കാൻ കഴിയില്ല
+  ok: true
+- text: എനിക്ക് സഹായം വേണം
+  spoken: എനിക്ക് സഹായം വേണം
+  ok: true
+- text: ദയവായി ഡോക്ടറെ വിളിക്കൂ
+  spoken: ദയവായി ഡോക്ടറെ വിളിക്കൂ
+  ok: true
+- text: അതെ
+  spoken: അതെ
+  ok: true
+- text: ഇല്ല
+  spoken: ഇല്ല
+  ok: true
+- text: നന്ദി
+  spoken: നന്ദി
+  ok: true
+- text: നമസ്കാരം
+  spoken: നമസ്കാരം
+  ok: true
+- text: ദയവായി കാത്തിരിക്കൂ
+  spoken: ദയവായി കാത്തിരിക്കൂ
+  ok: true
+- text: ഇതിന് എത്രയാണ്?
+  spoken: ഇതിന് എത്രയാണ്?
+  ok: true
+- text: ശുചിമുറി എവിടെയാണ്?
+  spoken: ശുചിമുറി എവിടെയാണ്?
+  ok: true
+- text: എനിക്ക് വെള്ളം വേണം
+  spoken: എനിക്ക് വെള്ളം വേണം
+  ok: true
+- text: ദയവായി എഴുതി കാണിക്കൂ
+  spoken: ദയവായി എഴുതി കാണിക്കൂ
+  ok: true
+- text: '2'
+  spoken: രണ്ട്
+  ok: true
+- text: '15'
+  spoken: പതിനഞ്ച്
+  ok: true
+- text: '250'
+  spoken: ഇരുനൂറ്റിയമ്പത്
+  ok: true
+- text: 1,45,622
+  spoken: ഒരു ലക്ഷത്തി നാൽപ്പത്തിയഞ്ച് ആയിരത്തിയറുനൂറ്റിയിരുപത്തിരണ്ട്
+  ok: true
+- text: '2.5'
+  spoken: രണ്ട് പോയിന്റ് അഞ്ച്
+  ok: true
+- text: '10:30'
+  spoken: പത്ത് മണി മുപ്പത് മിനിറ്റ്
+  ok: true
+- text: 9:05 PM
+  spoken: രാത്രി ഒമ്പത് മണി അഞ്ച് മിനിറ്റ്
+  ok: true
+- text: ₹250
+  spoken: ഇരുനൂറ്റിയമ്പത് രൂപ
+  ok: true
+- text: ₹99.50
+  spoken: തൊണ്ണൂറ്റിയൊമ്പത് രൂപ അമ്പത് പൈസ
+  ok: true
+- text: 98480 12345
+  spoken: ഒമ്പത് എട്ട് നാല് എട്ട് പൂജ്യം, ഒന്ന് രണ്ട് മൂന്ന് നാല് അഞ്ച്
+  ok: true
+- text: 15/08/2026
+  spoken: ഓഗസ്റ്റ് പതിനഞ്ച് രണ്ടായിരത്തിയിരുപത്തിയാറ്
+  ok: true
+- text: 50%
+  spoken: അമ്പത് ശതമാനം
+  ok: true
+- text: 500 mg
+  spoken: അഞ്ഞൂറ് മില്ലിഗ്രാം
+  ok: true
+- text: BP
+  spoken: ബി പി
+  ok: true
+- text: ATM
+  spoken: എ ടി എം
+  ok: true
+- text: doctor
+  spoken: ഡോക്ടർ
+  ok: true
+- text: Ramesh
+  spoken: ''
+  ok: false
+- text: '108'
+  spoken: നൂറ്റിയെട്ട്
+  ok: true

@@ -1,0 +1,42 @@
+- id: cannot-speak
+  english: I cannot speak
+  text: ನನಗೆ ಮಾತನಾಡಲು ಆಗುವುದಿಲ್ಲ
+- id: help
+  english: I need help
+  text: ನನಗೆ ಸಹಾಯ ಬೇಕು
+- id: doctor
+  english: Call a doctor
+  text: ದಯವಿಟ್ಟು ವೈದ್ಯರನ್ನು ಕರೆಯಿರಿ
+- id: 'yes'
+  english: 'Yes'
+  text: ಹೌದು
+- id: 'no'
+  english: 'No'
+  text: ಇಲ್ಲ
+- id: thanks
+  english: Thank you
+  text: ಧನ್ಯವಾದಗಳು
+- id: hello
+  english: Hello
+  text: ನಮಸ್ಕಾರ
+  extra: true
+- id: wait
+  english: Please wait
+  text: ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ಕಾಯಿರಿ
+  extra: true
+- id: how-much
+  english: How much?
+  text: ಇದು ಎಷ್ಟು?
+  extra: true
+- id: toilet
+  english: Where is the toilet?
+  text: ಶೌಚಾಲಯ ಎಲ್ಲಿದೆ?
+  extra: true
+- id: water
+  english: I need water
+  text: ನನಗೆ ನೀರು ಬೇಕು
+  extra: true
+- id: write
+  english: Please write it down
+  text: ದಯವಿಟ್ಟು ಬರೆದು ತೋರಿಸಿ
+  extra: true

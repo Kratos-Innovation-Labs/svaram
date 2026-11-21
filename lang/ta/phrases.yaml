@@ -1,0 +1,42 @@
+- id: cannot-speak
+  english: I cannot speak
+  text: என்னால் பேச முடியாது
+- id: help
+  english: I need help
+  text: எனக்கு உதவி வேண்டும்
+- id: doctor
+  english: Call a doctor
+  text: தயவுசெய்து டாக்டரை அழையுங்கள்
+- id: 'yes'
+  english: 'Yes'
+  text: ஆம்
+- id: 'no'
+  english: 'No'
+  text: இல்லை
+- id: thanks
+  english: Thank you
+  text: நன்றி
+- id: hello
+  english: Hello
+  text: வணக்கம்
+  extra: true
+- id: wait
+  english: Please wait
+  text: தயவுசெய்து காத்திருங்கள்
+  extra: true
+- id: how-much
+  english: How much?
+  text: இது எவ்வளவு?
+  extra: true
+- id: toilet
+  english: Where is the toilet?
+  text: கழிப்பறை எங்கே?
+  extra: true
+- id: water
+  english: I need water
+  text: எனக்கு தண்ணீர் வேண்டும்
+  extra: true
+- id: write
+  english: Please write it down
+  text: தயவுசெய்து எழுதிக் காட்டுங்கள்
+  extra: true

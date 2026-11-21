@@ -1,0 +1,90 @@
+- text: मैं बोलने में असमर्थ हूँ
+  spoken: मैं बोलने में असमर्थ हूँ
+  ok: true
+- text: मुझे मदद चाहिए
+  spoken: मुझे मदद चाहिए
+  ok: true
+- text: कृपया डॉक्टर को बुलाइए
+  spoken: कृपया डॉक्टर को बुलाइए
+  ok: true
+- text: हाँ
+  spoken: हाँ
+  ok: true
+- text: नहीं
+  spoken: नहीं
+  ok: true
+- text: धन्यवाद
+  spoken: धन्यवाद
+  ok: true
+- text: नमस्ते
+  spoken: नमस्ते
+  ok: true
+- text: कृपया थोड़ा रुकिए
+  spoken: कृपया थोड़ा रुकिए
+  ok: true
+- text: कितने का है?
+  spoken: कितने का है?
+  ok: true
+- text: टॉयलेट कहाँ है?
+  spoken: टॉयलेट कहाँ है?
+  ok: true
+- text: मुझे पानी चाहिए
+  spoken: मुझे पानी चाहिए
+  ok: true
+- text: कृपया लिखकर बताइए
+  spoken: कृपया लिखकर बताइए
+  ok: true
+- text: '2'
+  spoken: दो
+  ok: true
+- text: '15'
+  spoken: पंद्रह
+  ok: true
+- text: '250'
+  spoken: दो सौ पचास
+  ok: true
+- text: 1,45,622
+  spoken: एक लाख पैंतालीस हज़ार छह सौ बाईस
+  ok: true
+- text: '2.5'
+  spoken: ढाई
+  ok: true
+- text: '10:30'
+  spoken: साढ़े दस बजे
+  ok: true
+- text: 9:05 PM
+  spoken: रात नौ बजकर पाँच मिनट
+  ok: true
+- text: ₹250
+  spoken: दो सौ पचास रुपये
+  ok: true
+- text: ₹99.50
+  spoken: निन्यानबे रुपये पचास पैसे
+  ok: true
+- text: 98480 12345
+  spoken: नौ आठ चार आठ शून्य, एक दो तीन चार पाँच
+  ok: true
+- text: 15/08/2026
+  spoken: पंद्रह अगस्त दो हज़ार छब्बीस
+  ok: true
+- text: 50%
+  spoken: पचास प्रतिशत
+  ok: true
+- text: 500 mg
+  spoken: पाँच सौ एम जी
+  ok: true
+- text: BP
+  spoken: बी पी
+  ok: true
+- text: ATM
+  spoken: ए टी एम
+  ok: true
+- text: doctor
+  spoken: डॉक्टर
+  ok: true
+- text: Ramesh
+  spoken: ''
+  ok: false
+- text: '108'
+  spoken: एक सौ आठ
+  ok: true

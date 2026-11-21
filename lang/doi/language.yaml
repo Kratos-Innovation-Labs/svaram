@@ -1,0 +1,33 @@
+code: doi
+name: Dogri
+native: डोगरी
+script_block:
+- 0900
+- 097F
+status: live
+script_font: noto-sans-devanagari-devanagari-400-normal.woff2
+translate_target: doi_Deva
+voice:
+  service: rasa
+  voice: '7:4'
+segments:
+  first_max: 40
+  first_split: 27
+ui:
+  speak: बोलो
+  stop: रुको
+  speaking: बोला करदा ऐ
+  translating: अनुवाद होआ करदा ऐ
+  busy: थोड़ा रुको
+  ready: त्यार होआ करदा ऐ
+  first: पैह्लें किश टाइप करो
+  typeHere: 'Type in Dogri instead · '
+  typeNative: डोगरी च टाइप करो
+page:
+  title: डोगरी च टाइप करो
+  step1: जेह्ड़ा तुस आखना चांह्दे ओ, उसी डोगरी च टाइप करो.
+  step2: स्पीकर बटन दबाओ.
+  phrases_head: झट्ट वाक्य · दबाओ तां बोलग
+  more: होर (12)
+  less: घट्ट
+  placeholder: इत्थें टाइप करो…

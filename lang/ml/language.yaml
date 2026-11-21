@@ -1,0 +1,33 @@
+code: ml
+name: Malayalam
+native: മലയാളം
+script_block:
+- 0D00
+- 0D7F
+status: live
+script_font: noto-sans-malayalam-malayalam-400-normal.woff2
+translate_target: mal_Mlym
+voice:
+  service: rasa
+  voice: '11:4'
+segments:
+  first_max: 48
+  first_split: 32
+ui:
+  speak: പറയൂ
+  stop: നിർത്തൂ
+  speaking: സംസാരിക്കുന്നു
+  translating: വിവർത്തനം ചെയ്യുന്നു
+  busy: അൽപം കാത്തിരിക്കൂ
+  ready: തയ്യാറാകുന്നു
+  first: ആദ്യം എന്തെങ്കിലും ടൈപ്പ് ചെയ്യൂ
+  typeHere: 'Type in Malayalam instead · '
+  typeNative: മലയാളത്തിൽ ടൈപ്പ് ചെയ്യൂ
+page:
+  title: മലയാളത്തിൽ ടൈപ്പ് ചെയ്യൂ
+  step1: നിങ്ങൾക്ക് പറയാനുള്ളത് മലയാളത്തിൽ ടൈപ്പ് ചെയ്യൂ.
+  step2: സ്പീക്കർ ബട്ടൺ അമർത്തൂ.
+  phrases_head: പെട്ടെന്നുള്ള വാക്യങ്ങൾ · അമർത്തിയാൽ പറയും
+  more: കൂടുതൽ (12)
+  less: കുറവ്
+  placeholder: ഇവിടെ ടൈപ്പ് ചെയ്യൂ…

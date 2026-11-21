@@ -1,0 +1,42 @@
+- id: cannot-speak
+  english: I cannot speak
+  text: ਮੈਂ ਬੋਲਣ ਤੋਂ ਅਸਮਰੱਥ ਹਾਂ
+- id: help
+  english: I need help
+  text: ਮੈਨੂੰ ਮਦਦ ਚਾਹੀਦੀ ਹੈ
+- id: doctor
+  english: Call a doctor
+  text: ਕਿਰਪਾ ਕਰਕੇ ਡਾਕਟਰ ਨੂੰ ਬੁਲਾਓ
+- id: 'yes'
+  english: 'Yes'
+  text: ਹਾਂ
+- id: 'no'
+  english: 'No'
+  text: ਨਹੀਂ
+- id: thanks
+  english: Thank you
+  text: ਧੰਨਵਾਦ
+- id: hello
+  english: Hello
+  text: ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ
+  extra: true
+- id: wait
+  english: Please wait
+  text: ਕਿਰਪਾ ਕਰਕੇ ਥੋੜ੍ਹਾ ਰੁਕੋ
+  extra: true
+- id: how-much
+  english: How much?
+  text: ਇਹ ਕਿੰਨੇ ਦਾ ਹੈ?
+  extra: true
+- id: toilet
+  english: Where is the toilet?
+  text: ਬਾਥਰੂਮ ਕਿੱਥੇ ਹੈ?
+  extra: true
+- id: water
+  english: I need water
+  text: ਮੈਨੂੰ ਪਾਣੀ ਚਾਹੀਦਾ ਹੈ
+  extra: true
+- id: write
+  english: Please write it down
+  text: ਕਿਰਪਾ ਕਰਕੇ ਲਿਖ ਕੇ ਦਿਖਾਓ
+  extra: true

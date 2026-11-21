@@ -1,0 +1,33 @@
+code: hi
+name: Hindi
+native: हिन्दी
+script_block:
+- 0900
+- 097F
+status: live
+script_font: noto-sans-devanagari-devanagari-400-normal.woff2
+translate_target: hin_Deva
+voice:
+  service: kokoro
+  voice: hf_alpha
+segments:
+  first_max: 36
+  first_split: 24
+ui:
+  speak: बोलो
+  stop: रुको
+  speaking: बोल रहा है
+  translating: अनुवाद हो रहा है
+  busy: थोड़ा रुकिए
+  ready: तैयार हो रहा है
+  first: पहले कुछ टाइप कीजिए
+  typeHere: 'Type in Hindi instead · '
+  typeNative: हिन्दी में टाइप करें
+page:
+  title: हिन्दी में टाइप करें
+  step1: अपनी बात हिन्दी में टाइप कीजिए।
+  step2: स्पीकर बटन दबाइए।
+  phrases_head: झटपट वाक्य · दबाते ही बोलेगा
+  more: और वाक्य (12)
+  less: कम
+  placeholder: यहाँ टाइप कीजिए…

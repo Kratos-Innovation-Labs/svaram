@@ -1,0 +1,9 @@
+Svaram
+Copyright 2026 Kratos Innovation Labs Limited
+
+This product includes software developed by Kratos Innovation Labs Limited
+(https://svaram.live). Licensed under the Apache License, Version 2.0.
+
+Svaram does not include any voice or translation model. The installer downloads
+each model from its publisher, under the publisher's own licence; see CREDITS.md
+for every model, library and font, its licence, and the attribution it requires.

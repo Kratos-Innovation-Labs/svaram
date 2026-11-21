@@ -1,0 +1,42 @@
+- id: cannot-speak
+  english: I cannot speak
+  text: আমি কথা বলতে পারি না
+- id: help
+  english: I need help
+  text: আমার সাহায্য দরকার
+- id: doctor
+  english: Call a doctor
+  text: দয়া করে ডাক্তার ডাকুন
+- id: 'yes'
+  english: 'Yes'
+  text: হ্যাঁ
+- id: 'no'
+  english: 'No'
+  text: না
+- id: thanks
+  english: Thank you
+  text: ধন্যবাদ
+- id: hello
+  english: Hello
+  text: নমস্কার
+  extra: true
+- id: wait
+  english: Please wait
+  text: দয়া করে অপেক্ষা করুন
+  extra: true
+- id: how-much
+  english: How much?
+  text: এটার দাম কত?
+  extra: true
+- id: toilet
+  english: Where is the toilet?
+  text: টয়লেট কোথায়?
+  extra: true
+- id: water
+  english: I need water
+  text: আমার জল দরকার
+  extra: true
+- id: write
+  english: Please write it down
+  text: দয়া করে লিখে দেখান
+  extra: true

@@ -1,0 +1,90 @@
+- text: ମୁଁ କଥା କହିପାରୁନାହିଁ
+  spoken: ମୁଁ କଥା କହିପାରୁନାହିଁ
+  ok: true
+- text: ମୋତେ ସାହାଯ୍ୟ ଦରକାର
+  spoken: ମୋତେ ସାହାଯ୍ୟ ଦରକାର
+  ok: true
+- text: ଦୟାକରି ଡାକ୍ତରଙ୍କୁ ଡାକନ୍ତୁ
+  spoken: ଦୟାକରି ଡାକ୍ତରଙ୍କୁ ଡାକନ୍ତୁ
+  ok: true
+- text: ହଁ
+  spoken: ହଁ
+  ok: true
+- text: ନା
+  spoken: ନା
+  ok: true
+- text: ଧନ୍ୟବାଦ
+  spoken: ଧନ୍ୟବାଦ
+  ok: true
+- text: ନମସ୍କାର
+  spoken: ନମସ୍କାର
+  ok: true
+- text: ଦୟାକରି ଟିକେ ଅପେକ୍ଷା କରନ୍ତୁ
+  spoken: ଦୟାକରି ଟିକେ ଅପେକ୍ଷା କରନ୍ତୁ
+  ok: true
+- text: ଏହାର ଦାମ କେତେ?
+  spoken: ଏହାର ଦାମ କେତେ?
+  ok: true
+- text: ଶୌଚାଳୟ କେଉଁଠି?
+  spoken: ଶୌଚାଳୟ କେଉଁଠି?
+  ok: true
+- text: ମୋତେ ପାଣି ଦରକାର
+  spoken: ମୋତେ ପାଣି ଦରକାର
+  ok: true
+- text: ଦୟାକରି ଲେଖି ଦେଖାନ୍ତୁ
+  spoken: ଦୟାକରି ଲେଖି ଦେଖାନ୍ତୁ
+  ok: true
+- text: '2'
+  spoken: ଦୁଇ
+  ok: true
+- text: '15'
+  spoken: ପନ୍ଦର
+  ok: true
+- text: '250'
+  spoken: ଦୁଇ ଶହ ପଚାଶ
+  ok: true
+- text: 1,45,622
+  spoken: ଏକ ଲକ୍ଷ ପଞ୍ଚଚାଳିଶି ହଜାର ଛଅ ଶହ ବାଇଶି
+  ok: true
+- text: '2.5'
+  spoken: ଦୁଇ ଦଶମିକ ପାଞ୍ଚ
+  ok: true
+- text: '10:30'
+  spoken: ଦଶଟା ତିରିଶି ମିନିଟ
+  ok: true
+- text: 9:05 PM
+  spoken: ରାତି ନଅଟା ପାଞ୍ଚ ମିନିଟ
+  ok: true
+- text: ₹250
+  spoken: ଦୁଇ ଶହ ପଚାଶ ଟଙ୍କା
+  ok: true
+- text: ₹99.50
+  spoken: ଅନେଶତ ଟଙ୍କା ପଚାଶ ପଇସା
+  ok: true
+- text: 98480 12345
+  spoken: ନଅ ଆଠ ଚାରି ଆଠ ଶୂନ, ଏକ ଦୁଇ ତିନି ଚାରି ପାଞ୍ଚ
+  ok: true
+- text: 15/08/2026
+  spoken: ଅଗଷ୍ଟ ପନ୍ଦର ଦୁଇ ହଜାର ଛବିଶି
+  ok: true
+- text: 50%
+  spoken: ପଚାଶ ପ୍ରତିଶତ
+  ok: true
+- text: 500 mg
+  spoken: ପାଞ୍ଚ ଶହ ମିଲିଗ୍ରାମ
+  ok: true
+- text: BP
+  spoken: ବି ପି
+  ok: true
+- text: ATM
+  spoken: ଏ ଟି ଏମ
+  ok: true
+- text: doctor
+  spoken: ଡାକ୍ତର
+  ok: true
+- text: Ramesh
+  spoken: ''
+  ok: false
+- text: '108'
+  spoken: ଶହେ ଆଠ
+  ok: true

@@ -1,0 +1,90 @@
+- text: ਮੈਂ ਬੋਲਣ ਤੋਂ ਅਸਮਰੱਥ ਹਾਂ
+  spoken: ਮੈਂ ਬੋਲਣ ਤੋਂ ਅਸਮਰੱਥ ਹਾਂ
+  ok: true
+- text: ਮੈਨੂੰ ਮਦਦ ਚਾਹੀਦੀ ਹੈ
+  spoken: ਮੈਨੂੰ ਮਦਦ ਚਾਹੀਦੀ ਹੈ
+  ok: true
+- text: ਕਿਰਪਾ ਕਰਕੇ ਡਾਕਟਰ ਨੂੰ ਬੁਲਾਓ
+  spoken: ਕਿਰਪਾ ਕਰਕੇ ਡਾਕਟਰ ਨੂੰ ਬੁਲਾਓ
+  ok: true
+- text: ਹਾਂ
+  spoken: ਹਾਂ
+  ok: true
+- text: ਨਹੀਂ
+  spoken: ਨਹੀਂ
+  ok: true
+- text: ਧੰਨਵਾਦ
+  spoken: ਧੰਨਵਾਦ
+  ok: true
+- text: ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ
+  spoken: ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ
+  ok: true
+- text: ਕਿਰਪਾ ਕਰਕੇ ਥੋੜ੍ਹਾ ਰੁਕੋ
+  spoken: ਕਿਰਪਾ ਕਰਕੇ ਥੋੜ੍ਹਾ ਰੁਕੋ
+  ok: true
+- text: ਇਹ ਕਿੰਨੇ ਦਾ ਹੈ?
+  spoken: ਇਹ ਕਿੰਨੇ ਦਾ ਹੈ?
+  ok: true
+- text: ਬਾਥਰੂਮ ਕਿੱਥੇ ਹੈ?
+  spoken: ਬਾਥਰੂਮ ਕਿੱਥੇ ਹੈ?
+  ok: true
+- text: ਮੈਨੂੰ ਪਾਣੀ ਚਾਹੀਦਾ ਹੈ
+  spoken: ਮੈਨੂੰ ਪਾਣੀ ਚਾਹੀਦਾ ਹੈ
+  ok: true
+- text: ਕਿਰਪਾ ਕਰਕੇ ਲਿਖ ਕੇ ਦਿਖਾਓ
+  spoken: ਕਿਰਪਾ ਕਰਕੇ ਲਿਖ ਕੇ ਦਿਖਾਓ
+  ok: true
+- text: '2'
+  spoken: ਦੋ
+  ok: true
+- text: '15'
+  spoken: ਪੰਦਰਾਂ
+  ok: true
+- text: '250'
+  spoken: ਦੋ ਸੌ ਪੰਜਾਹ
+  ok: true
+- text: 1,45,622
+  spoken: ਇੱਕ ਲੱਖ ਪੰਤਾਲੀ ਹਜ਼ਾਰ ਛੇ ਸੌ ਬਾਈ
+  ok: true
+- text: '2.5'
+  spoken: ਦੋ ਦਸ਼ਮਲਵ ਪੰਜ
+  ok: true
+- text: '10:30'
+  spoken: ਦਸ ਵੱਜ ਕੇ ਤੀਹ ਮਿੰਟ
+  ok: true
+- text: 9:05 PM
+  spoken: ਰਾਤ ਨੌਂ ਵੱਜ ਕੇ ਪੰਜ ਮਿੰਟ
+  ok: true
+- text: ₹250
+  spoken: ਦੋ ਸੌ ਪੰਜਾਹ ਰੁਪਏ
+  ok: true
+- text: ₹99.50
+  spoken: ਨੜਿੰਨਵੇਂ ਰੁਪਏ ਪੰਜਾਹ ਪੈਸੇ
+  ok: true
+- text: 98480 12345
+  spoken: ਨੌਂ ਅੱਠ ਚਾਰ ਅੱਠ ਸਿਫ਼ਰ, ਇੱਕ ਦੋ ਤਿੰਨ ਚਾਰ ਪੰਜ
+  ok: true
+- text: 15/08/2026
+  spoken: ਅਗਸਤ ਪੰਦਰਾਂ ਦੋ ਹਜ਼ਾਰ ਛੱਬੀ
+  ok: true
+- text: 50%
+  spoken: ਪੰਜਾਹ ਪ੍ਰਤੀਸ਼ਤ
+  ok: true
+- text: 500 mg
+  spoken: ਪੰਜ ਸੌ ਮਿਲੀਗ੍ਰਾਮ
+  ok: true
+- text: BP
+  spoken: ਬੀ ਪੀ
+  ok: true
+- text: ATM
+  spoken: ਏ ਟੀ ਐੱਮ
+  ok: true
+- text: doctor
+  spoken: ਡਾਕਟਰ
+  ok: true
+- text: Ramesh
+  spoken: ''
+  ok: false
+- text: '108'
+  spoken: ਇੱਕ ਸੌ ਅੱਠ
+  ok: true

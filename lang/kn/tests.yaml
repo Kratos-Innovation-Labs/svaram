@@ -1,0 +1,90 @@
+- text: ನನಗೆ ಮಾತನಾಡಲು ಆಗುವುದಿಲ್ಲ
+  spoken: ನನಗೆ ಮಾತನಾಡಲು ಆಗುವುದಿಲ್ಲ
+  ok: true
+- text: ನನಗೆ ಸಹಾಯ ಬೇಕು
+  spoken: ನನಗೆ ಸಹಾಯ ಬೇಕು
+  ok: true
+- text: ದಯವಿಟ್ಟು ವೈದ್ಯರನ್ನು ಕರೆಯಿರಿ
+  spoken: ದಯವಿಟ್ಟು ವೈದ್ಯರನ್ನು ಕರೆಯಿರಿ
+  ok: true
+- text: ಹೌದು
+  spoken: ಹೌದು
+  ok: true
+- text: ಇಲ್ಲ
+  spoken: ಇಲ್ಲ
+  ok: true
+- text: ಧನ್ಯವಾದಗಳು
+  spoken: ಧನ್ಯವಾದಗಳು
+  ok: true
+- text: ನಮಸ್ಕಾರ
+  spoken: ನಮಸ್ಕಾರ
+  ok: true
+- text: ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ಕಾಯಿರಿ
+  spoken: ದಯವಿಟ್ಟು ಸ್ವಲ್ಪ ಕಾಯಿರಿ
+  ok: true
+- text: ಇದು ಎಷ್ಟು?
+  spoken: ಇದು ಎಷ್ಟು?
+  ok: true
+- text: ಶೌಚಾಲಯ ಎಲ್ಲಿದೆ?
+  spoken: ಶೌಚಾಲಯ ಎಲ್ಲಿದೆ?
+  ok: true
+- text: ನನಗೆ ನೀರು ಬೇಕು
+  spoken: ನನಗೆ ನೀರು ಬೇಕು
+  ok: true
+- text: ದಯವಿಟ್ಟು ಬರೆದು ತೋರಿಸಿ
+  spoken: ದಯವಿಟ್ಟು ಬರೆದು ತೋರಿಸಿ
+  ok: true
+- text: '2'
+  spoken: ಎರಡು
+  ok: true
+- text: '15'
+  spoken: ಹದಿನೈದು
+  ok: true
+- text: '250'
+  spoken: ಇನ್ನೂರೈವತ್ತು
+  ok: true
+- text: 1,45,622
+  spoken: ಒಂದು ಲಕ್ಷದ ನಲವತ್ತೈದು ಸಾವಿರದ ಆರುನೂರಿಪ್ಪತ್ತೆರಡು
+  ok: true
+- text: '2.5'
+  spoken: ಎರಡು ಪಾಯಿಂಟ್ ಐದು
+  ok: true
+- text: '10:30'
+  spoken: ಹತ್ತು ಗಂಟೆ ಮೂವತ್ತು ನಿಮಿಷ
+  ok: true
+- text: 9:05 PM
+  spoken: ರಾತ್ರಿ ಒಂಬತ್ತು ಗಂಟೆ ಐದು ನಿಮಿಷ
+  ok: true
+- text: ₹250
+  spoken: ಇನ್ನೂರೈವತ್ತು ರೂಪಾಯಿ
+  ok: true
+- text: ₹99.50
+  spoken: ತೊಂಬತ್ತೊಂಬತ್ತು ರೂಪಾಯಿ ಐವತ್ತು ಪೈಸೆ
+  ok: true
+- text: 98480 12345
+  spoken: ಒಂಬತ್ತು ಎಂಟು ನಾಲ್ಕು ಎಂಟು ಸೊನ್ನೆ, ಒಂದು ಎರಡು ಮೂರು ನಾಲ್ಕು ಐದು
+  ok: true
+- text: 15/08/2026
+  spoken: ಆಗಸ್ಟ್ ಹದಿನೈದು ಎರಡು ಸಾವಿರದ ಇಪ್ಪತ್ತಾರು
+  ok: true
+- text: 50%
+  spoken: ಶೇಕಡಾ ಐವತ್ತು
+  ok: true
+- text: 500 mg
+  spoken: ಐನೂರು ಮಿಲಿಗ್ರಾಂ
+  ok: true
+- text: BP
+  spoken: ಬಿ ಪಿ
+  ok: true
+- text: ATM
+  spoken: ಎ ಟಿ ಎಂ
+  ok: true
+- text: doctor
+  spoken: ಡಾಕ್ಟರ್
+  ok: true
+- text: Ramesh
+  spoken: ''
+  ok: false
+- text: '108'
+  spoken: ನೂರೆಂಟು
+  ok: true

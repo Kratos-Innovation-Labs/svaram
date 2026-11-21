@@ -1,0 +1,33 @@
+code: te
+name: Telugu
+native: తెలుగు
+script_block:
+- 0C00
+- 0C7F
+status: live
+script_font: noto-sans-telugu-telugu-400-normal.woff2
+translate_target: tel_Telu
+voice:
+  service: rasa
+  voice: '19:4'
+segments:
+  first_max: 48
+  first_split: 32
+ui:
+  speak: చెప్పు
+  stop: ఆపు
+  speaking: మాట్లాడుతోంది
+  translating: అనువదిస్తోంది
+  busy: కొంచెం ఆగండి
+  ready: సిద్ధమవుతోంది
+  first: ముందు ఏదైనా టైప్ చేయండి
+  typeHere: 'Type in Telugu instead · '
+  typeNative: తెలుగులో టైప్ చేయండి
+page:
+  title: తెలుగులో టైప్ చేయండి
+  step1: మీ మాట తెలుగులో టైప్ చేయండి.
+  step2: స్పీకర్ బటన్ నొక్కండి.
+  phrases_head: త్వరిత మాటలు · నొక్కితే వినిపిస్తుంది
+  more: మరిన్ని (12)
+  less: తక్కువ
+  placeholder: ఇక్కడ టైప్ చేయండి…
