@@ -1,8 +1,0 @@
-# torch comes from the CPU-only index first (see deploy.sh); the rest from PyPI.
-transformers==4.51.3
-sentencepiece==0.2.0
-indictranstoolkit==1.1.1
-huggingface_hub>=0.30,<1
-numpy>=1.26,<2.3
-fastapi>=0.110,<1
-uvicorn>=0.29,<1

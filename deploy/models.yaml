@@ -1,0 +1,52 @@
+# Where each model comes from, and the SHA-256 of the files svaram.live runs.
+# tools/fetch_models.py downloads from the publisher and refuses any file whose checksum differs.
+# Nothing here is stored in this repository; each model keeps its publisher's licence (CREDITS.md).
+
+rasa:                                  # vits_rasa_13 as ONNX: 9 languages
+  dir: /opt/svaram/voice/model
+  huggingface: MatiasLin/sherpa-onnx-vits-rasa-13
+  files:
+    model.onnx:   {pick: "*.onnx",     sha256: 4473f8d0b6f738196c1626bbf337cda99b34749b638bb7234c4cb8e1992bf804}
+    tokens.txt:   {pick: "tokens.txt", sha256: 32ad56b2533484ccd61f8c783cc32b1f90ae06e65469476548c2f832eb6d3a9c}
+
+kokoro:                                # Kokoro-82M: Hindi
+  dir: /opt/svaram/voice-hi/model
+  files:
+    kokoro-v1.0.onnx:
+      url: https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+      sha256: 7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5
+    voices-v1.0.bin:
+      url: https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+      sha256: bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d
+
+translate:                             # IndicTrans2 en->indic, distilled 200M
+  dir: /opt/svaram/translate/model
+  huggingface: ai4bharat/indictrans2-en-indic-dist-200M
+  skip: [pytorch_model.bin]            # the same weights as model.safetensors
+  files:
+    model.safetensors: {sha256: 0039e4304e9889acc5c8350a193311d07aa5399b6d9fb0445e8fde19e3533bb5}
+
+indictts:                              # AI4Bharat Indic-TTS (FastPitch + HiFi-GAN): Gujarati, Odia
+  dir: /opt/svaram/voice-itts/model
+  github_release: AI4Bharat/Indic-TTS  # one <lang>.zip per language
+  zips:                                # SHA-256 of each release zip, as svaram.live downloaded it
+    gu: 7cb5bfa35e14f93469c3f56afa9225d0494615a961868b2966ac4f04f8f7e8d0
+    or: eff767d91415fde8b9c24a01aa37076c56d468a97efca42e5c9dc78f44c9500b
+  release_files:                       # the checkpoints as released (with training state), where known
+    gu/fastpitch/best_model.pth: 82f853f96a5e41ea00e526611b4cd0b8a343063c6dd8a1800bbe65921fe1ae89
+    gu/hifigan/best_model.pth:   92d86da63b3c323f1d315b482e951eca12e019039af9dd08cd75d8e28fe26079
+  files:                               # the files Svaram uses, as on svaram.live; best_model.pth is slimmed
+                                       # to config + weights by tools/slim_checkpoint.py
+    gu/fastpitch/best_model.pth: 9e1b2637ef3475108e84fd99047a71f6568c28e1e80dd612d97ea781fd425306
+    gu/fastpitch/config.json:    bae995ad4e63c25e623fafb41d34505c1c8b9dd11539071b318daf8506a8e437
+    gu/fastpitch/speakers.pth:   f665e358b34b232fb27f7c8cd3968fcd47784a7be065ae127f611c33ee809bea
+    gu/hifigan/best_model.pth:   ffb896ce57029119df7a63f5e6e2916be7bc63a27807e01c775ebcddfab16365
+    gu/hifigan/config.json:      b3c998de0dfa24939448fd900ce361d10cbce7aedef688668834015cda8b7aa3
+    or/fastpitch/best_model.pth: 4ca3dab053457f6a3e6e4a36c4472af3a164fef6524bbb3937f2d8942fcf8136
+    or/fastpitch/config.json:    547c72a41c6c9e7f80d7e7d82fa0be2c63c555240c94d5129fcef6816fa329c3
+    or/fastpitch/speakers.pth:   f665e358b34b232fb27f7c8cd3968fcd47784a7be065ae127f611c33ee809bea
+    or/hifigan/best_model.pth:   2baab134a84f306e5b9ee8b33a927a4dcf3fbb8370497a487a121ed978e60ada
+    or/hifigan/config.json:      b47ad79aebd73c4ebb4e1dbd5a910a179d420de61c5bc0021a1aa6c98aeef1b6
+  # config.svaram.json is made from config.json: the speakers file points at this folder, and
+  # text_cleaner is no_cleaners (Svaram's language pack has already prepared the text).
+  # The fetcher then writes model/manifest.json; its SHA-256 goes into /etc/svaram/voice-itts.env.

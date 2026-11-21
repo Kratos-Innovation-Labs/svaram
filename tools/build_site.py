@@ -86,7 +86,7 @@ def languages_js(packs: dict, order: list[str]) -> str:
 
 
 def build(out: str, check: bool = False) -> list[str]:
-    with open(os.path.join(WEB, "site.yaml"), encoding="utf-8") as f:
+    with open(os.environ.get("SVARAM_SITE_YAML", os.path.join(WEB, "site.yaml")), encoding="utf-8") as f:
         site = yaml.safe_load(f)
     packs = load_all(with_prepare=check)
     order = site["languages"]

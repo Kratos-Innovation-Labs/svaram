@@ -53,12 +53,12 @@ See [docs/architecture.md](docs/architecture.md).
 
 ## Quick start
 
-On a fresh Ubuntu 24.04 server with 8 GB of memory and 4 CPU cores:
+On a fresh Ubuntu server (24.04 tested) with 4 CPU cores and about 6 GB of free memory for all twelve languages (3.5 GB without Gujarati and Odia):
 
 ```bash
 git clone https://github.com/Kratos-Innovation-Labs/svaram.git
 cd svaram
-sudo bash deploy/install.sh --languages te,hi --domain your.domain
+sudo bash deploy/install.sh --languages te,hi --domain your.domain   # or leave out --languages for all
 ```
 
 The installer creates one Python environment per service, downloads only the models the chosen
